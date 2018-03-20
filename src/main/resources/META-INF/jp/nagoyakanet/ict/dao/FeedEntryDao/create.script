@@ -1,0 +1,13 @@
+CREATE TABLE feed_entry(
+ feed_seq BIGINT NULL,
+ entry_seq BIGINT AUTO_INCREMENT PRIMARY KEY,
+ feed_uri VARCHAR(200) NULL,
+ feed_title VARCHAR(200) NULL,
+ entry_uri VARCHAR(200) NULL,
+ entry_title VARCHAR(200) NULL,
+ entry_desc CLOB NULL,
+ published_date TIMESTAMP NULL,
+ fetched_date TIMESTAMP NULL
+);
+
+CREATE INDEX idx_feed_entry_eu ON feed_entry(entry_uri);

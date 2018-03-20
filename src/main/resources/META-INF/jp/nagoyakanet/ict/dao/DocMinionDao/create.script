@@ -1,0 +1,38 @@
+CREATE TABLE doc_minion(
+ seq BIGINT AUTO_INCREMENT PRIMARY KEY,
+ s_key VARCHAR(100) NOT NULL,
+ d_key VARCHAR(100) NOT NULL,
+ e_key VARCHAR(10) NOT NULL,
+ minion CLOB NOT NULL,
+ come_at TIMESTAMP NULL,
+ come_by_user_seq BIGINT NULL,
+ come_by_user_cd VARCHAR(100) NULL,
+ come_by_user_nm VARCHAR(100) NULL,
+ come_by_office_seq BIGINT NULL,
+ come_by_office_cd VARCHAR(100) NULL,
+ come_by_office_nm VARCHAR(100) NULL,
+ come_by_team_seq BIGINT NULL,
+ come_by_team_cd VARCHAR(100) NULL,
+ come_by_team_nm VARCHAR(100) NULL,
+ gone_at TIMESTAMP NULL,
+ gone_by_user_seq BIGINT NULL,
+ gone_by_user_cd VARCHAR(100) NULL,
+ gone_by_user_nm VARCHAR(100) NULL,
+ gone_by_office_seq BIGINT NULL,
+ gone_by_office_cd VARCHAR(100) NULL,
+ gone_by_office_nm VARCHAR(100) NULL,
+ gone_by_team_seq BIGINT NULL,
+ gone_by_team_cd VARCHAR(100) NULL,
+ gone_by_team_nm VARCHAR(100) NULL,
+ progenitor BIGINT NULL,
+ ancestor BIGINT NULL,
+ descendant BIGINT NULL,
+ lifetime INT NULL,
+ cleaned_at TIMESTAMP NULL
+);
+
+CREATE INDEX idx_doc_minion_su ON doc_minion(seq,come_by_user_seq);
+CREATE INDEX idx_doc_minion_st ON doc_minion(seq,come_by_team_seq);
+CREATE INDEX idx_doc_minion_sb ON doc_minion(seq,come_by_office_seq);
+
+ALTER TABLE doc_minion ALTER COLUMN seq RESTART WITH 1000;

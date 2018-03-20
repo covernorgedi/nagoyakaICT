@@ -1,0 +1,3 @@
+DROP TABLE IF EXISTS messaging_session;
+
+DROP INDEX IF EXISTS idx_messaging_session_session_id;

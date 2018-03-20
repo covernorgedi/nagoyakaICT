@@ -1,0 +1,43 @@
+<div id="tabEditBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+   #cmn/inputHiddenNormal{"attrs":{"id":"consumeAction.agent.personList.1.minion"}}
+
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"creativeWork.minion"}}
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <fieldset>
+    <legend>認定情報</legend>
+
+    <div class="radioGroup">
+     <label>認定状態</label>
+     #cmn/inputRadioNormal{"label":"認定","attrs":{"id":"certifiedStatus.1"}}
+     #cmn/inputRadioNormal{"label":"申請中","attrs":{"id":"certifiedStatus.2"}}
+     #cmn/inputRadioNormal{"label":"非該当","attrs":{"id":"certifiedStatus.3"}}
+    </div>
+
+    <div class="radioGroup">
+     <label>要介護度</label>
+     #cmn/inputRadioNormal{"label":"要支援1","attrs":{"id":"careLevel.s1"}}
+     #cmn/inputRadioNormal{"label":"要支援2","attrs":{"id":"careLevel.s2"}}
+     #cmn/inputRadioNormal{"label":"要介護1","attrs":{"id":"careLevel.c1"}}
+     #cmn/inputRadioNormal{"label":"要介護2","attrs":{"id":"careLevel.c2"}}
+     #cmn/inputRadioNormal{"label":"要介護3","attrs":{"id":"careLevel.c3"}}
+     #cmn/inputRadioNormal{"label":"要介護4","attrs":{"id":"careLevel.c4"}}
+     #cmn/inputRadioNormal{"label":"要介護5","attrs":{"id":"careLevel.c5"}}
+    </div>
+
+    #cmn/inputTextPickADate{"label":"認定有効期間from","attrs":{"id":"certifiedFrom"}}
+    #cmn/inputTextPickADate{"label":"認定有効期間to","attrs":{"id":"certifiedTo"}}
+
+   </fieldset>
+
+  </div>
+ </div>
+
+</div>

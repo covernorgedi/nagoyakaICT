@@ -1,0 +1,85 @@
+<div id="tabViewBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+
+   <img id="faceIconImg_" src="__FACE_ICON_URI__" alt="顔写真" />
+
+   <table class="bordered-responsive">
+    <caption>基本</caption>
+    <tr>
+     <th>なごやかID</th>
+     <td>__CODE__</td>
+    </tr>
+    <tr>
+     <th>氏名</th>
+     <td>__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th>フリガナ</th>
+     <td>__NAME_RUBY__STRING__</td>
+    </tr>
+    <tr>
+     <th>性別</th>
+     <td>
+      #cmn/genderJa(__GENDER__MINION__)
+     </td>
+    </tr>
+    <tr>
+     <th>生年月日</th>
+     <td>
+      #cmn/date2YgmdJa(__BIRTH_DATE__DATE__)
+     </td>
+    </tr>
+    <tr>
+     <th>年齢</th>
+     <td>
+      #cmn/date2Age(__BIRTH_DATE__DATE__)
+      歳
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>住所、連絡先</caption>
+    <tr>
+     <th colspan="2">郵便番号</th>
+     <td colspan="2">__ADDRESS__POSTAL_ADDRESS_LIST__1__POSTAL_CODE__STRING__</td>
+    </tr>
+    <tr>
+     <th style="width:25%;">都道府県</th>
+     <td style="width:25%;">__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_REGION__STRING__</td>
+     <th style="width:25%;">市区町村</th>
+     <td style="width:25%;">__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_LOCALITY__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">町域、番地、建物</th>
+     <td colspan="2">__ADDRESS__POSTAL_ADDRESS_LIST__1__STREET_ADDRESS__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">電話番号</th>
+     <td colspan="2">__TELEPHONE__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">Eメール</th>
+     <td colspan="2">__EMAIL__STRING__</td>
+    </tr>
+   </table>
+
+   <div class="docViewGroup">
+    <h4>所属</h4>
+    <h5>所属事業所</h5>
+    #cmn/viewListerSimple{"_officeMemberOf.officeList.minion":__OFFICE_MEMBER_OF__OFFICE_LIST__MINION__}
+    <h5>所属チーム</h5>
+    #cmn/viewListerSimple{"_teamMemberOf.teamList.minion":__TEAM_MEMBER_OF__TEAM_LIST__MINION__}
+    <h5>職種</h5>
+    #cmn/viewListerSimple{"_hasOccupation.occupationList.minion":__HAS_OCCUPATION__OCCUPATION_LIST__MINION__}
+   </div>
+
+  </div>
+ </div>
+
+</div>

@@ -1,0 +1,39 @@
+CREATE TABLE tl_message(
+ seq BIGINT AUTO_INCREMENT PRIMARY KEY,
+ display_name VARCHAR(200) NULL,
+ kind VARCHAR(20) NULL,
+ sub_kind VARCHAR(20) NULL,
+ body CLOB NOT NULL,
+ icon VARCHAR(100) NULL,
+ message_to CLOB NULL,
+ emergency CHAR(1) NULL,
+ emg_sort INT NULL,
+ created_at TIMESTAMP NULL,
+ created_by BIGINT NULL,
+ updated_at TIMESTAMP NULL,
+ updated_by_user_seq BIGINT NULL,
+ updated_by_user_cd VARCHAR(100) NULL,
+ updated_by_user_nm VARCHAR(100) NULL,
+ updated_by_office_seq BIGINT NULL,
+ updated_by_office_cd VARCHAR(100) NULL,
+ updated_by_office_nm VARCHAR(100) NULL,
+ updated_by_team_seq BIGINT NULL,
+ updated_by_team_cd VARCHAR(100) NULL,
+ updated_by_team_nm VARCHAR(100) NULL,
+ share_with_user_seq BIGINT NULL,
+ share_with_user_cd VARCHAR(100) NULL,
+ share_with_user_nm VARCHAR(100) NULL,
+ share_with_office_seq BIGINT NULL,
+ share_with_office_cd VARCHAR(100) NULL,
+ share_with_office_nm VARCHAR(100) NULL,
+ share_with_team_seq BIGINT NULL,
+ share_with_team_cd VARCHAR(100) NULL,
+ share_with_team_nm VARCHAR(100) NULL,
+ expired_at TIMESTAMP NULL,
+ expired_by BIGINT NULL
+);
+
+CREATE INDEX idx_tl_message_uu ON tl_message(seq,updated_by_user_seq);
+CREATE INDEX idx_tl_message_su ON tl_message(seq,share_with_user_seq);
+CREATE INDEX idx_tl_message_so ON tl_message(seq,share_with_office_seq);
+CREATE INDEX idx_tl_message_st ON tl_message(seq,share_with_team_seq);

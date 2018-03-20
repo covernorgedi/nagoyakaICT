@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+ <title>NAGOYAKA ICT なごやかICT - __TITLE__</title>
+ <link href="__BASE_URI__/Material+Icons/material-icons.css" type="text/css" rel="stylesheet">
+ <link href="__BASE_URI__/Materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+ <link href="__BASE_URI__/Materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+ <link href="__BASE_URI__/Monthly/css/monthly.css" type="text/css" rel="stylesheet" media="screen,projection" />
+ <link href="__BASE_URI__/wickedpicker/wickedpicker.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+ <link href="__BASE_URI__/css/main.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+ <div id="gbBox">
+  <form id="f" method="post" enctype="multipart/form-data">
+   #rootBlock(__SID__,__ACT__,__PATH__)
+
+   <input id="baseURI" type="hidden" value="__BASE_URI__" />
+   <input id="sessionId" type="hidden" value="__SID__" />
+   #cmn/inputHiddenNormal{"attrs":{"id":"signInUser.seq"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"signInUser.code"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"signInUser.name.string"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"signInUser.officeMemberOf.officeList.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"signInUser.teamMemberOf.teamList.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"signInUser.hasOccupation.occupationList.minion"}}
+  </form>
+ </div>
+
+ <!--  Scripts-->
+ <script src="__BASE_URI__/jQuery/jquery-2.2.4.js"></script>
+ <script src="__BASE_URI__/jQueryFileUpload/js/vendor/jquery.ui.widget.js"></script>
+ <script src="__BASE_URI__/jQueryFileUpload/js/jquery.iframe-transport.js"></script>
+ <script src="__BASE_URI__/jQueryFileUpload/js/jquery.fileupload.js"></script>
+ <script src="__BASE_URI__/Materialize/js/materialize.js"></script>
+ <script src="__BASE_URI__/Monthly/js/monthly.js"></script>
+ <script src="__BASE_URI__/wickedpicker/wickedpicker.min.js"></script>
+ <script src="__BASE_URI__/js/main.js"></script>
+ <script src="__BASE_URI__/js/portal.js"></script>
+
+</body>
+</html>

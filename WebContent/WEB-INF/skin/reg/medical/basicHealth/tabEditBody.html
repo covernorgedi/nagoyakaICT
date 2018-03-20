@@ -1,0 +1,255 @@
+<div id="tabEditBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+   #cmn/inputHiddenNormal{"attrs":{"id":"consumeAction.agent.personList.1.minion"}}
+
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"creativeWork.minion"}}
+
+   <fieldset>
+    <legend>医療介護方針</legend>
+
+    <div class="checkboxGroup">
+     <label>区分</label><br />
+     #cmn/inputCheckboxNormal{"label":"未分類","attrs":{"id":"mediCareType.U"}}
+     #cmn/inputCheckboxNormal{"label":"医療","attrs":{"id":"mediCareType.M"}}
+     #cmn/inputCheckboxNormal{"label":"介護","attrs":{"id":"mediCareType.C"}}
+     #cmn/inputCheckboxNormal{"label":"リハビリ","attrs":{"id":"mediCareType.R"}}
+     #cmn/inputCheckboxNormal{"label":"終末期","attrs":{"id":"mediCareType.T"}}
+    </div>
+
+    <div class="checkboxGroup">
+     <label>状態</label><br />
+     #cmn/inputCheckboxNormal{"label":"未分類","attrs":{"id":"mediCareStatus.U"}}
+     #cmn/inputCheckboxNormal{"label":"安定","attrs":{"id":"mediCareStatus.C"}}
+     #cmn/inputCheckboxNormal{"label":"重症","attrs":{"id":"mediCareStatus.S"}}
+     #cmn/inputCheckboxNormal{"label":"終末期","attrs":{"id":"mediCareStatus.T"}}
+    </div>
+
+    #cmn/textAreaNormal{"label":"備考","attrs":{"id":"remarks"}}
+
+   </fieldset>
+
+   <fieldset>
+    <legend>身体情報</legend>
+    <div class="col s12 m12 l6" style="padding-left:0;">
+     #cmn/inputTextNormal{"label":"身長[cm]","attrs":{"id":"height"}}
+    </div>
+    <div class="col s12 m12 l6" style="padding-right:0;">
+     #cmn/inputTextNormal{"label":"体重[kg]","attrs":{"id":"weight"}}
+    </div>
+
+    <div class="radioGroup">
+     <label>血液型ABO</label><br />
+     #cmn/inputRadioNormal{"label":"不明","attrs":{"id":"bloodAbo.U"}}
+     #cmn/inputRadioNormal{"label":"A型","attrs":{"id":"bloodAbo.A"}}
+     #cmn/inputRadioNormal{"label":"B型","attrs":{"id":"bloodAbo.B"}}
+     #cmn/inputRadioNormal{"label":"O型","attrs":{"id":"bloodAbo.O"}}
+     #cmn/inputRadioNormal{"label":"AB型","attrs":{"id":"bloodAbo.AB"}}
+    </div>
+    <div class="col s12 m12 l6" style="padding-left:0;">
+     <div class="radioGroup">
+      <label>血液型Rh</label><br />
+      #cmn/inputRadioNormal{"label":"不明","attrs":{"id":"bloodRh.U"}}
+      #cmn/inputRadioNormal{"label":"Rh+","attrs":{"id":"bloodRh.P"}}
+      #cmn/inputRadioNormal{"label":"Rh-","attrs":{"id":"bloodRh.M"}}
+     </div>
+    </div>
+    <div class="col s12 m12 l6" style="padding-right:0;">
+     #cmn/inputTextNormal{"label":"血液型備考","attrs":{"id":"bloodRemarks"}}
+    </div>
+
+   </fieldset>
+
+   <fieldset>
+    <legend>生活習慣</legend>
+
+    <div class="checkboxGroup">
+     <label>性格</label><br />
+     #cmn/inputCheckboxNormal{"label":"正直","attrs":{"id":"characterType.H"}}
+     #cmn/inputCheckboxNormal{"label":"素直","attrs":{"id":"characterType.F"}}
+     #cmn/inputCheckboxNormal{"label":"明るい","attrs":{"id":"characterType.C"}}
+     #cmn/inputCheckboxNormal{"label":"大雑把","attrs":{"id":"characterType.R"}}
+     #cmn/inputCheckboxNormal{"label":"神経質","attrs":{"id":"characterType.N"}}
+     #cmn/inputCheckboxNormal{"label":"短気","attrs":{"id":"characterType.S"}}
+     #cmn/inputCheckboxNormal{"label":"その他","attrs":{"id":"characterType.O"}}
+    </div>
+    #cmn/inputTextNormal{"label":"性格その他","attrs":{"id":"otherCharacter"}}
+    <div class="checkboxGroup">
+     <label>趣味</label><br />
+     #cmn/inputCheckboxNormal{"label":"運動、スポーツ","attrs":{"id":"interestKind.sports"}}
+     #cmn/inputCheckboxNormal{"label":"旅行","attrs":{"id":"interestKind.travel"}}
+     #cmn/inputCheckboxNormal{"label":"花、園芸","attrs":{"id":"interestKind.gardening"}}
+     #cmn/inputCheckboxNormal{"label":"生花、フラワーアレンジメント","attrs":{"id":"interestKind.flowers"}}
+     #cmn/inputCheckboxNormal{"label":"手芸、編み物","attrs":{"id":"interestKind.craft"}}
+     #cmn/inputCheckboxNormal{"label":"カラオケ","attrs":{"id":"interestKind.karaoke"}}
+     #cmn/inputCheckboxNormal{"label":"音楽","attrs":{"id":"interestKind.musics"}}
+     #cmn/inputCheckboxNormal{"label":"絵画、美術館","attrs":{"id":"interestKind.art"}}
+     #cmn/inputCheckboxNormal{"label":"読書","attrs":{"id":"interestKind.reading"}}
+     #cmn/inputCheckboxNormal{"label":"その他","attrs":{"id":"interestKind.other"}}
+    </div>
+    #cmn/inputTextNormal{"label":"趣味その他","attrs":{"id":"otherInterest"}}
+    <div class="radioGroup">
+     <label>喫煙</label><br />
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"smokingType.U"}}
+     #cmn/inputRadioNormal{"label":"吸う","attrs":{"id":"smokingType.S"}}
+     #cmn/inputRadioNormal{"label":"以前吸っていたが、やめた","attrs":{"id":"smokingType.P"}}
+     #cmn/inputRadioNormal{"label":"吸わない","attrs":{"id":"smokingType.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>飲酒</label><br />
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"drinkType.U"}}
+     #cmn/inputRadioNormal{"label":"毎日飲む","attrs":{"id":"drinkType.E"}}
+     #cmn/inputRadioNormal{"label":"週に３～５回飲む","attrs":{"id":"drinkType.WF"}}
+     #cmn/inputRadioNormal{"label":"週に１～２回飲む","attrs":{"id":"drinkType.WS"}}
+     #cmn/inputRadioNormal{"label":"月に２～３回飲む","attrs":{"id":"drinkType.MS"}}
+     #cmn/inputRadioNormal{"label":"それ以下","attrs":{"id":"drinkType.R"}}
+     #cmn/inputRadioNormal{"label":"まったく飲まない","attrs":{"id":"drinkType.A"}}
+    </div>
+   </fieldset>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <fieldset>
+    <legend>生活環境</legend>
+    <div class="radioGroup">
+     <label>同居区分</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"livingTogether.U"}}
+     #cmn/inputRadioNormal{"label":"同居","attrs":{"id":"livingTogether.T"}}
+     #cmn/inputRadioNormal{"label":"独居","attrs":{"id":"livingTogether.I"}}
+    </div>
+    <div class="radioGroup">
+     <label>駐車場有無</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"hasParking.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"hasParking.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"hasParking.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>段差の有無</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"hasUneven.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"hasUneven.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"hasUneven.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>手摺の有無</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"hasHandrail.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"hasHandrail.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"hasHandrail.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>暖房の有無</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"hasHeating.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"hasHeating.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"hasHeating.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>冷房の有無</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"hasCooling.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"hasCooling.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"hasCooling.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>日当たり状況</label><br />
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"sunlightCondition.U"}}
+     #cmn/inputRadioNormal{"label":"とても良い","attrs":{"id":"sunlightCondition.F"}}
+     #cmn/inputRadioNormal{"label":"良い","attrs":{"id":"sunlightCondition.G"}}
+     #cmn/inputRadioNormal{"label":"良くも悪くもない","attrs":{"id":"sunlightCondition.N"}}
+     #cmn/inputRadioNormal{"label":"悪い","attrs":{"id":"sunlightCondition.B"}}
+     #cmn/inputRadioNormal{"label":"とても悪い","attrs":{"id":"sunlightCondition.W"}}
+    </div>
+    <div class="radioGroup">
+     <label>住居種別</label><br />
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"houseType.U"}}
+     #cmn/inputRadioNormal{"label":"持ち家（一戸建て）","attrs":{"id":"houseType.OI"}}
+     #cmn/inputRadioNormal{"label":"持ち家（分譲マンションなどの共同住宅）","attrs":{"id":"houseType.OA"}}
+     #cmn/inputRadioNormal{"label":"借家（一戸建て）","attrs":{"id":"houseType.RI"}}
+     #cmn/inputRadioNormal{"label":"借家（民間賃貸アパート・マンションなどの共同住宅）","attrs":{"id":"houseType.RCA"}}
+     #cmn/inputRadioNormal{"label":"借家（公営・公団などのアパート・マンションなどの共同住宅）","attrs":{"id":"houseType.RPA"}}
+     #cmn/inputRadioNormal{"label":"その他（社宅・社員寮など）","attrs":{"id":"houseType.O"}}
+    </div>
+    #cmn/inputTextNormal{"label":"居室階数","attrs":{"id":"floorNumber"}}
+    <div class="checkboxGroup">
+     <label>公費情報</label>
+     #cmn/inputCheckboxNormal{"label":"生活保護","attrs":{"id":"publicExpenseType.SS"}}
+     #cmn/inputCheckboxNormal{"label":"結核","attrs":{"id":"publicExpenseType.TB"}}
+     #cmn/inputCheckboxNormal{"label":"原爆","attrs":{"id":"publicExpenseType.AB"}}
+     #cmn/inputCheckboxNormal{"label":"その他","attrs":{"id":"publicExpenseType.O"}}
+    </div>
+    #cmn/inputTextNormal{"label":"公費その他","attrs":{"id":"otherPublicExpense"}}
+    <div class="checkboxGroup">
+     <label>生活を支えている収入源</label><br />
+     #cmn/inputCheckboxNormal{"label":"公的年金収入（国民年金、厚生年金、恩給など）","attrs":{"id":"sourceIncomeType.PP"}}
+     #cmn/inputCheckboxNormal{"label":"生命保険等の私的年金","attrs":{"id":"sourceIncomeType.CP"}}
+     #cmn/inputCheckboxNormal{"label":"社員で働いて得た収入","attrs":{"id":"sourceIncomeType.FE"}}
+     #cmn/inputCheckboxNormal{"label":"パート、アルバイトで働いて得た収入","attrs":{"id":"sourceIncomeType.PE"}}
+     #cmn/inputCheckboxNormal{"label":"自営業で働いて得た収入","attrs":{"id":"sourceIncomeType.IE"}}
+     #cmn/inputCheckboxNormal{"label":"不動産収入や株の配当","attrs":{"id":"sourceIncomeType.CD"}}
+     #cmn/inputCheckboxNormal{"label":"子どもなどからの援助","attrs":{"id":"sourceIncomeType.RA"}}
+     #cmn/inputCheckboxNormal{"label":"預貯金をとり崩して","attrs":{"id":"sourceIncomeType.SV"}}
+     #cmn/inputCheckboxNormal{"label":"生活保護","attrs":{"id":"sourceIncomeType.SS"}}
+     #cmn/inputCheckboxNormal{"label":"その他","attrs":{"id":"sourceIncomeType.O"}}
+    </div>
+    #cmn/inputTextNormal{"label":"収入源その他","attrs":{"id":"otherSourceIncome"}}
+    <div class="radioGroup">
+     <label>経済状況</label><br />
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"economicCondition.U"}}
+     #cmn/inputRadioNormal{"label":"十分なゆとり","attrs":{"id":"economicCondition.F"}}
+     #cmn/inputRadioNormal{"label":"ある程度ゆとり","attrs":{"id":"economicCondition.G"}}
+     #cmn/inputRadioNormal{"label":"あまりない","attrs":{"id":"economicCondition.B"}}
+     #cmn/inputRadioNormal{"label":"ほとんどない","attrs":{"id":"economicCondition.W"}}
+     #cmn/inputRadioNormal{"label":"よくわからない","attrs":{"id":"economicCondition.A"}}
+    </div>
+    <div class="radioGroup">
+     <label>身辺の介護者</label><br />
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"caretakerType.U"}}
+     #cmn/inputRadioNormal{"label":"なし","attrs":{"id":"caretakerType.N"}}
+     #cmn/inputRadioNormal{"label":"一般介護者","attrs":{"id":"caretakerType.NC"}}
+     #cmn/inputRadioNormal{"label":"重症介護者","attrs":{"id":"caretakerType.SC"}}
+     #cmn/inputRadioNormal{"label":"終末期介護者","attrs":{"id":"caretakerType.TC"}}
+     #cmn/inputRadioNormal{"label":"未分類","attrs":{"id":"caretakerType.UC"}}
+    </div>
+
+   </fieldset>
+
+   <fieldset>
+    <legend>装具類</legend>
+    <div class="radioGroup">
+     <label>眼鏡</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"glassesType.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"glassesType.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"glassesType.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>コンタクト</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"contactLensType.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"contactLensType.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"contactLensType.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>補聴器</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"hearingAid.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"hearingAid.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"hearingAid.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>歩行器</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"walkingFrame.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"walkingFrame.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"walkingFrame.N"}}
+    </div>
+    <div class="radioGroup">
+     <label>杖</label>
+     #cmn/inputRadioNormal{"label":"未回答","attrs":{"id":"walkingStick.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"walkingStick.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"walkingStick.N"}}
+    </div>
+
+   </fieldset>
+
+  </div>
+ </div>
+
+</div>

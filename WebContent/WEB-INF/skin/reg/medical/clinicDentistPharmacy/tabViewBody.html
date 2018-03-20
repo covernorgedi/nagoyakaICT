@@ -1,0 +1,254 @@
+<div id="tabViewBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+  </div>
+
+  <div class="col s12 m12 l6">
+  </div>
+ </div>
+
+ <h2 class="docPageHeader">医科</h2>
+
+ <div class="row">
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>医科1</caption>
+    <tr>
+     <th style="width:25%;">施設名称</th>
+     <td>
+      __CLINIC_LIST__1__OFFICE__NAME__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th>利用形態</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"未回答","attrs":{"disabled":"clinicList.1.primaryCare.U"}}
+      #cmn/inputRadioNormal{"label":"かかりつけ医","attrs":{"disabled":"clinicList.1.primaryCare.P"}}
+      #cmn/inputRadioNormal{"label":"外来","attrs":{"disabled":"clinicList.1.primaryCare.O"}}
+     </td>
+    </tr>
+    <tr>
+     <th>診療科目</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"内科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.internalMedicine"}}
+      #cmn/inputCheckboxNormal{"label":"呼吸器科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.pulmonaryMedicine"}}
+      #cmn/inputCheckboxNormal{"label":"老年医科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.geriatrics"}}
+      #cmn/inputCheckboxNormal{"label":"消化器科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.gastroenterology"}}
+      #cmn/inputCheckboxNormal{"label":"内視鏡科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.endoscopy"}}
+      #cmn/inputCheckboxNormal{"label":"糖尿病科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.diabetesMellitus"}}
+      #cmn/inputCheckboxNormal{"label":"代謝内分泌科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.endocrinology"}}
+      #cmn/inputCheckboxNormal{"label":"神経科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.neurology"}}
+      #cmn/inputCheckboxNormal{"label":"循環器科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.cardiology"}}
+      <br />
+      #cmn/inputCheckboxNormal{"label":"外科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.surgery"}}
+      #cmn/inputCheckboxNormal{"label":"消化器外科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.gastroenterologicalSurgery"}}
+      #cmn/inputCheckboxNormal{"label":"整形外科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.orthopedics"}}
+      #cmn/inputCheckboxNormal{"label":"皮膚科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.dermatology"}}
+      #cmn/inputCheckboxNormal{"label":"リハビリテーション科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.rehabilitation"}}
+      <br />
+      #cmn/inputCheckboxNormal{"label":"眼科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.ophthalmology"}}
+      #cmn/inputCheckboxNormal{"label":"耳鼻咽喉科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.otolaryngology"}}
+      #cmn/inputCheckboxNormal{"label":"脳神経外科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.neurosurgery"}}
+      #cmn/inputCheckboxNormal{"label":"精神医科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.psychiatry"}}
+      <br />
+      #cmn/inputCheckboxNormal{"label":"放射線科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.radiology"}}
+      #cmn/inputCheckboxNormal{"label":"麻酔科","attrs":{"disabled":"clinicList.1.medicalSpecialtyList.anaesthesiology"}}
+     </td>
+    </tr>
+    <tr>
+     <th>担当者</th>
+     <td>
+      #reg/medical/clinicDentistPharmacy/viewListerPrimaryCareUser{"_clinicList.1.userList.demion":__CLINIC_LIST__1__USER_LIST__MINION__}
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+
+   <table class="bordered-responsive">
+    <caption>医科2</caption>
+    <tr>
+     <th style="width:25%;">施設名称</th>
+     <td>
+      __CLINIC_LIST__2__OFFICE__NAME__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th>利用形態</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"未回答","attrs":{"disabled":"clinicList.2.primaryCare.U"}}
+      #cmn/inputRadioNormal{"label":"かかりつけ医","attrs":{"disabled":"clinicList.2.primaryCare.P"}}
+      #cmn/inputRadioNormal{"label":"外来","attrs":{"disabled":"clinicList.2.primaryCare.O"}}
+     </td>
+    </tr>
+    <tr>
+     <th>診療科目</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"内科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.internalMedicine"}}
+      #cmn/inputCheckboxNormal{"label":"呼吸器科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.pulmonaryMedicine"}}
+      #cmn/inputCheckboxNormal{"label":"老年医科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.geriatrics"}}
+      #cmn/inputCheckboxNormal{"label":"消化器科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.gastroenterology"}}
+      #cmn/inputCheckboxNormal{"label":"内視鏡科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.endoscopy"}}
+      #cmn/inputCheckboxNormal{"label":"糖尿病科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.diabetesMellitus"}}
+      #cmn/inputCheckboxNormal{"label":"代謝内分泌科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.endocrinology"}}
+      #cmn/inputCheckboxNormal{"label":"神経科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.neurology"}}
+      #cmn/inputCheckboxNormal{"label":"循環器科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.cardiology"}}
+      <br />
+      #cmn/inputCheckboxNormal{"label":"外科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.surgery"}}
+      #cmn/inputCheckboxNormal{"label":"消化器外科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.gastroenterologicalSurgery"}}
+      #cmn/inputCheckboxNormal{"label":"整形外科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.orthopedics"}}
+      #cmn/inputCheckboxNormal{"label":"皮膚科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.dermatology"}}
+      #cmn/inputCheckboxNormal{"label":"リハビリテーション科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.rehabilitation"}}
+      <br />
+      #cmn/inputCheckboxNormal{"label":"眼科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.ophthalmology"}}
+      #cmn/inputCheckboxNormal{"label":"耳鼻咽喉科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.otolaryngology"}}
+      #cmn/inputCheckboxNormal{"label":"脳神経外科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.neurosurgery"}}
+      #cmn/inputCheckboxNormal{"label":"精神医科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.psychiatry"}}
+      <br />
+      #cmn/inputCheckboxNormal{"label":"放射線科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.radiology"}}
+      #cmn/inputCheckboxNormal{"label":"麻酔科","attrs":{"disabled":"clinicList.2.medicalSpecialtyList.anaesthesiology"}}
+     </td>
+    </tr>
+    <tr>
+     <th>担当者</th>
+     <td>
+      #reg/medical/clinicDentistPharmacy/viewListerPrimaryCareUser{"_clinicList.2.userList.demion":__CLINIC_LIST__2__USER_LIST__MINION__}
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+ </div>
+
+ <h2 class="docPageHeader">歯科</h2>
+
+ <div class="row">
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>歯科1</caption>
+    <tr>
+     <th style="width:25%;">施設名称</th>
+     <td>
+      __DENTIST_LIST__1__OFFICE__NAME__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th>利用形態</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"未回答","attrs":{"disabled":"dentistList.1.primaryCare.U"}}
+      #cmn/inputRadioNormal{"label":"かかりつけ医","attrs":{"disabled":"dentistList.1.primaryCare.P"}}
+      #cmn/inputRadioNormal{"label":"外来","attrs":{"disabled":"dentistList.1.primaryCare.O"}}
+     </td>
+    </tr>
+    <tr>
+     <th>担当者</th>
+     <td>
+      #reg/medical/clinicDentistPharmacy/viewListerPrimaryCareUser{"_dentistList.1.userList.demion":__DENTIST_LIST__1__USER_LIST__MINION__}
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>歯科2</caption>
+    <tr>
+     <th style="width:25%;">施設名称</th>
+     <td>
+      __DENTIST_LIST__2__OFFICE__NAME__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th>利用形態</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"未回答","attrs":{"disabled":"dentistList.2.primaryCare.U"}}
+      #cmn/inputRadioNormal{"label":"かかりつけ薬局","attrs":{"disabled":"dentistList.2.primaryCare.P"}}
+      #cmn/inputRadioNormal{"label":"外来","attrs":{"disabled":"dentistList.2.primaryCare.O"}}
+     </td>
+    </tr>
+    <tr>
+     <th>担当者</th>
+     <td>
+      #reg/medical/clinicDentistPharmacy/viewListerPrimaryCareUser{"_dentistList.2.userList.demion":__DENTIST_LIST__2__USER_LIST__MINION__}
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+ </div>
+
+ <h2 class="docPageHeader">薬局</h2>
+
+ <div class="row">
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>薬局1</caption>
+    <tr>
+     <th style="width:25%;">施設名称</th>
+     <td>
+      __PHARMACY_LIST__1__OFFICE__NAME__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th>利用形態</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"未回答","attrs":{"disabled":"pharmacyList.1.primaryCare.U"}}
+      #cmn/inputRadioNormal{"label":"かかりつけ薬局","attrs":{"disabled":"pharmacyList.1.primaryCare.P"}}
+      #cmn/inputRadioNormal{"label":"外来","attrs":{"disabled":"pharmacyList.1.primaryCare.O"}}
+     </td>
+    </tr>
+    <tr>
+     <th>担当者</th>
+     <td>
+      #reg/medical/clinicDentistPharmacy/viewListerPrimaryCareUser{"_pharmacyList.1.userList.demion":__PHARMACY_LIST__1__USER_LIST__MINION__}
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>薬局2</caption>
+    <tr>
+     <th style="width:25%;">施設名称</th>
+     <td>
+      __PHARMACY_LIST__2__OFFICE__NAME__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th>利用形態</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"未回答","attrs":{"disabled":"pharmacyList.2.primaryCare.U"}}
+      #cmn/inputRadioNormal{"label":"かかりつけ医","attrs":{"disabled":"pharmacyList.2.primaryCare.P"}}
+      #cmn/inputRadioNormal{"label":"外来","attrs":{"disabled":"pharmacyList.2.primaryCare.O"}}
+     </td>
+    </tr>
+    <tr>
+     <th>担当者</th>
+     <td>
+      #reg/medical/clinicDentistPharmacy/viewListerPrimaryCareUser{"_pharmacyList.2.userList.demion":__PHARMACY_LIST__2__USER_LIST__MINION__}
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+ </div>
+
+</div>

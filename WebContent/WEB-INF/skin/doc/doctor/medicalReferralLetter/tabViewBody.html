@@ -1,0 +1,85 @@
+<div id="tabViewBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"患者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+
+   <table class="bordered-responsive">
+    <caption>作成医師</caption>
+    <tr>
+     <th>医師名</th>
+     <td>__SEND_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th>医療機関名称</th>
+     <td>__SEND_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th>医療機関所在地</th>
+     <td>__SEND_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__STRING__</td>
+    </tr>
+    <tr>
+     <th>医療機関TEL</th>
+     <td>__SEND_ACTION__AGENT__ORGANIZATION_LIST__1__TELEPHONE__STRING__</td>
+    </tr>
+    <tr>
+     <th>医療機関FAX</th>
+     <td>__SEND_ACTION__AGENT__ORGANIZATION_LIST__1__FAX_NUMBER__STRING__</td>
+    </tr>
+   </table>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>送り先情報</caption>
+    <tr>
+     <th>医療機関名称</th>
+     <td>__RECEIVE_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th>医療機関所在地</th>
+     <td>__RECEIVE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__STRING__</td>
+    </tr>
+    <tr>
+     <th>氏名</th>
+     <td>__RECEIVE_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+    </tr>
+   </table>
+
+   <table class="bordered-responsive">
+    <caption>診療情報</caption>
+    <tr>
+     <th>病名</th>
+     <td>__DISEASE_NAME__</td>
+    </tr>
+    <tr>
+     <th>紹介目的</th>
+     <td>__INTRODUCTION_AIM__</td>
+    </tr>
+    <tr>
+     <th>既往歴及び家族歴</th>
+     <td>__PAST_MEDICAL_HISTORY__</td>
+    </tr>
+    <tr>
+     <th>症状経過及び検査結果</th>
+     <td>__INSPECTION_RESULT__</td>
+    </tr>
+    <tr>
+     <th>治療履歴</th>
+     <td>__MEDICAL_TREATMENT_HISTORY__</td>
+    </tr>
+    <tr>
+     <th>現在の処方</th>
+     <td>__CURRENT_PRESCRIPTION__</td>
+    </tr>
+    <tr>
+     <th>備考</th>
+     <td>__REMARKS__</td>
+    </tr>
+   </table>
+
+  </div>
+ </div>
+
+</div>

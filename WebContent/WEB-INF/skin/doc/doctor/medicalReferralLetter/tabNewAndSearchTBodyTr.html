@@ -1,0 +1,45 @@
+<tr>
+ <td data-label="作成年月日">
+  <div class="right">
+   <span class="truncate widthDate">
+    #cmn/date2YmdJa(__CREATIVE_WORK__DATE_CREATED__DATE_TIME__)
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="送り先医療機関名">
+  <div class="right">
+   <span class="truncate widthBelong">
+    __RECEIVE_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="送り先氏名">
+  <div class="right">
+   <span class="truncate widthName">
+    __RECEIVE_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="医療機関名">
+  <div class="right">
+   <span class="truncate widthBelong">
+    __SEND_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="医師名">
+  <div class="right">
+   <span class="truncate widthName">
+    __SEND_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="操作">
+  #docSearchOperations(__SID__,__ACT__,__PATH__,__SEQ__)
+ </td>
+</tr>

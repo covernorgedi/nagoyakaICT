@@ -1,0 +1,22 @@
+<div id="tabViewBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <div class="docViewGroup">
+    <h4>一覧</h4>
+    <h5>入退院</h5>
+    #reg/medical/inOutHospital/viewListerHospitalizedSummary{"_conds.hospitalizedList.minion":__HOSPITALIZED_LIST__MINION__}
+   </div>
+
+  </div>
+ </div>
+
+ <div id="hospitalizedTableRows">
+  #reg/medical/inOutHospital/viewListerHospitalizedRows{"_hospitalizedList.demion":__HOSPITALIZED_LIST__MINION__}
+ </div>
+
+</div>

@@ -1,0 +1,124 @@
+<div id="newScheduleItemDlg" class="modal modal-fixed-footer">
+ <div class="modal-content">
+
+  <h4>新しい予定</h4>
+
+  <fieldset>
+   <legend>内容</legend>
+
+   <div>
+    <div style="float:left;display:inline-block;width:50%;padding-left:0;padding-right:6px;">
+     #cmn/inputTextPickADate{"label":"開始年月日","attrs":{"id":"scheduleItemStartDate"}}
+    </div>
+    <div style="float:left;display:inline-block;width:50%;padding-left:6px;padding-right:0;">
+     <label for="scheduleItemStartTime">開始時刻</label>
+     <input id="scheduleItemStartTime" type="text" name="scheduleItemStartTime" class="timepicker"/>
+    </div>
+   </div>
+   <div style="clear:both;"></div>
+
+   <div>
+    <div style="float:left;display:inline-block;width:50%;padding-left:0;padding-right:6px;">
+     #cmn/inputTextPickADate{"label":"終了年月日","attrs":{"id":"scheduleItemEndDate"}}
+    </div>
+    <div style="float:left;display:inline-block;width:50%;padding-left:6px;padding-right:0;">
+     <label for="scheduleItemEndTime">終了時刻</label>
+     <input id="scheduleItemEndTime" type="text" name="scheduleItemEndTime" class="timepicker"/>
+    </div>
+   </div>
+   <div style="clear:both;"></div>
+
+   #cmn/inputTextNormal{"label":"タイトル","attrs":{"id":"scheduleItem.name.string"}}
+
+   <div class="input-field">
+    <select id="scheduleItemServiceKind">
+     <option value="" selected="selected">指定なし</option>
+     <option value="1">医療</option>
+     <option value="2">看護</option>
+     <option value="10">薬学的管理指導</option>
+     <option value="11">栄養管理指導</option>
+     <option value="3">介護</option>
+     <option value="4">訪問介護</option>
+     <option value="5">施設</option>
+     <option value="6">通所</option>
+     <option value="7">介護予防</option>
+     <option value="8">地域密着</option>
+     <option value="9">保険外</option>
+    </select>
+    <label>サービス区分</label>
+   </div>
+
+   #cmn/textAreaNormal{"label":"内容","attrs":{"id":"scheduleItem.description.string"}}
+
+  </fieldset>
+
+  <fieldset>
+   <legend>実行者</legend>
+
+   <div>
+    #cmn/inputRadioNormal{"label":"__SIGN_IN_USER__TEAM_MEMBER_OF__TEAM_LIST__1__NAME__STRING__ の利用者","attrs":{"id":"scheduleItemActor.T","checked":"checked"}}
+    <input id="scheduleItemActorTeam" type="hidden" value="__SIGN_IN_USER__TEAM_MEMBER_OF__TEAM_LIST__1__SEQ__" />
+    <div class="input-field">
+     <select id="scheduleItemActorTeamOccupation" multiple="multiple">
+      <option value="">指定なし</option>
+      <option value="physician">医師</option>
+      <option value="pharmacist">薬剤師</option>
+      <option value="nurse">看護師</option>
+      <option value="caregiver">介護職</option>
+      <option value="careManager">ケアマネージャー</option>
+      <option value="clerk">事務員</option>
+     </select>
+     <label>職種を限定</label>
+    </div>
+   </div>
+   <div>
+    #cmn/inputRadioNormal{"label":"__SIGN_IN_USER__OFFICE_MEMBER_OF__OFFICE_LIST__1__NAME__STRING__ の利用者","attrs":{"id":"scheduleItemActor.O"}}
+    <input id="scheduleItemActorOffice" type="hidden" value="__SIGN_IN_USER__OFFICE_MEMBER_OF__OFFICE_LIST__1__SEQ__" />
+    <div class="input-field">
+     <!-- ToDo: 何箇所かあるのでテンプレートで出せるようにしたい -->
+     <select id="scheduleItemActorOfficeOccupation" multiple="multiple">
+      <option value="">指定なし</option>
+      <option value="physician">医師</option>
+      <option value="pharmacist">薬剤師</option>
+      <option value="nurse">看護師</option>
+      <option value="caregiver">介護職</option>
+      <option value="careManager">ケアマネージャー</option>
+      <option value="clerk">事務員</option>
+     </select>
+     <label>職種を限定</label>
+    </div>
+   </div>
+   <div>
+    #cmn/inputRadioNormal{"label":"指定の利用者","attrs":{"id":"scheduleItemActor.U"}}
+    <div class="input-field">
+     <select id="scheduleItemActorUser">
+      <option value="" selected="selected">選択してください</option>
+      <option value="2">333002: 武田　拓夫（山中病院）</option>
+      <option value="3">333025: 新川　光彦（ゲスト）</option>
+      <option value="4">330010: 坪井　美希（寺島調剤薬局）</option>
+      <option value="5">330003: 久野　ひろ子（名古屋訪問看護ステーション）</option>
+      <option value="8">330004: 川辺　祐介（東海介護センター）</option>
+      <option value="10">330015: 吉田　尚志（ケアリエ東）</option>
+      <option value="12">330001: 斉藤　隆也（山中病院）</option>
+      <option value="13">330011: 武藤　学（名古屋訪問看護ステーション）</option>
+      <option value="16">330098: 伊吹　陽一郎（伊吹介護センター）</option>
+      <option value="17">330099: 伊吹　マイケル（伊吹介護センター）</option>
+     </select>
+     <label>利用者</label>
+    </div>
+   </div>
+
+  </fieldset>
+
+
+  <div class="center-align" style="margin-bottom:10px;">
+   <button id="newScheduleItemSubmit" class="btn waves-effect waves-light green darken-1" onclick="ajaxNewScheduleItem(); return false;">
+    登録
+   </button>
+  </div>
+
+ </div>
+ <div class="modal-footer">
+  <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">閉じる</a>
+ </div>
+</div>

@@ -1,0 +1,2 @@
+1-59/10 * * * * java:jp.nagoyakanet.ict.task.FetchFeedTask#execute
+# * * * * * java:jp.nagoyakanet.ict.task.FetchFeedTask#execute

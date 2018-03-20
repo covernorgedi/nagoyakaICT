@@ -1,0 +1,33 @@
+CREATE TABLE msg_timeline(
+ seq BIGINT AUTO_INCREMENT PRIMARY KEY,
+ display_name VARCHAR(200) NULL,
+ kind VARCHAR(20) NULL,
+ body CLOB NOT NULL,
+ icon VARCHAR(100) NULL,
+ created_at TIMESTAMP NULL,
+ created_by_user_seq BIGINT NULL,
+ created_by_user_cd VARCHAR(100) NULL,
+ created_by_user_nm VARCHAR(100) NULL,
+ created_by_office_seq BIGINT NULL,
+ created_by_office_cd VARCHAR(100) NULL,
+ created_by_office_nm VARCHAR(100) NULL,
+ created_by_team_seq BIGINT NULL,
+ created_by_team_cd VARCHAR(100) NULL,
+ created_by_team_nm VARCHAR(100) NULL,
+ updated_at TIMESTAMP NULL,
+ updated_by_user_seq BIGINT NULL,
+ updated_by_user_cd VARCHAR(100) NULL,
+ updated_by_user_nm VARCHAR(100) NULL,
+ updated_by_office_seq BIGINT NULL,
+ updated_by_office_cd VARCHAR(100) NULL,
+ updated_by_office_nm VARCHAR(100) NULL,
+ updated_by_team_seq BIGINT NULL,
+ updated_by_team_cd VARCHAR(100) NULL,
+ updated_by_team_nm VARCHAR(100) NULL,
+ expired_at TIMESTAMP NULL,
+ expired_by BIGINT NULL
+);
+
+CREATE INDEX idx_msg_timeline_su ON msg_timeline(seq,created_by_user_seq);
+CREATE INDEX idx_msg_timeline_so ON msg_timeline(seq,created_by_office_seq);
+CREATE INDEX idx_msg_timeline_st ON msg_timeline(seq,created_by_team_seq);

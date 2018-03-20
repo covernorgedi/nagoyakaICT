@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+ <title>NAGOYAKA ICT なごやかICT sign in</title>
+ <link href="__BASE_URI__/Material+Icons/material-icons.css" type="text/css" rel="stylesheet">
+ <link href="__BASE_URI__/Materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+ <link href="__BASE_URI__/Materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+ <link href="__BASE_URI__/css/signIn.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+ <div id="gbBox">
+  <form id="f" method="post">
+   <div class="row">
+    <div class="col s12 m6 push-m3 l4 push-l4">
+     <div id="signInBox">
+      <h1>NAGOYAKA ICT</h1>
+      <p>なごやかID、パスワードを入力して「Sign In」ボタンを押してください。</p>
+      <table>
+       <tr style="__TR_STYLE_MESSAGE__">
+        <td>
+         <div class="card-panel red lighten-3">
+          <span class="white-text">__SIGN_IN_MESSAGE__</span>
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <div class="input-field">
+          <input id="signInId" type="text" class="validate" name="signInId" value="__SIGN_IN_ID__">
+          <label for="signInId">なごやかID</label>
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <td>
+         <div class="input-field">
+          <input id="signInPwd" type="password" class="validate" name="signInPwd">
+          <label for="signInPwd">パスワード</label>
+         </div>
+        </td>
+       </tr>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col s12 m6 push-m3 l4 push-l4">
+     <div class="signInBtn">
+      <button id="signInBtn" class="btn-large waves-effect waves-light green darken-1" name="doSignIn" onclick="hashPwd(); return false;">
+       <img src="__BASE_URI__/img/common/butterfly-tp-32x32.png" alt="サインイン" />Sign In
+      </button>
+      <div style="display:none;">
+       <input id="signInBtn2" type="submit" name="doSignIn2" />
+      </div>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col s12 m6 push-m3 l4 push-l4">
+     <div class="signInBtn2">
+      <button id="facebookSignInBtn" class="btn-large waves-effect waves-light indigo darken-2" name="doFacebookSignIn" style="display:none;">
+       <img src="__BASE_URI__/img/sample/facebook-icon32.png" alt="Facebookアカウントでサインイン" />Sign In with Facebook
+      </button>
+      <button id="googleSignInBtn" class="btn-large waves-effect waves-light red darken-1" name="doGoogleSignIn">
+       <img src="__BASE_URI__/img/sample/google-icon32.png" alt="Googleアカウントでサインイン" />Sign In with Google
+      </button>
+     </div>
+    </div>
+   </div>
+   <div class="row" style="margin-bottom:0;padding-bottom:20px;">
+    <div class="col s12 m6 push-m3 l4 push-l4">
+     <div id="signInBox2">
+      <ul>
+       <li><a href="">かんたん操作マニュアル</a></li>
+       <li><a href="javascript:;">なごやかIDを忘れた方</a></li>
+       <li><a href="javascript:;">パスワードを忘れた方</a></li>
+      </ul>
+     </div>
+    </div>
+   </div>
+
+  </form>
+ </div>
+
+ <!--  Scripts-->
+ <script src="__BASE_URI__/jQuery/jquery-2.2.4.min.js"></script>
+ <script src="__BASE_URI__/Materialize/js/materialize.js"></script>
+ <script src="__BASE_URI__/Materialize/js/init.js"></script>
+ <script src="__BASE_URI__/js/js-sha256/sha256.min.js"></script>
+ <script src="__BASE_URI__/js/signIn.js"></script>
+
+</body>
+</html>

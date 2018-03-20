@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+ <title>NAGOYAKA ICT なごやかICT タイムアウトページ</title>
+ <link href="__BASE_URI__/Material+Icons/material-icons.css" type="text/css" rel="stylesheet">
+ <link href="__BASE_URI__/Materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+ <link href="__BASE_URI__/Materialize/css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+ <link href="__BASE_URI__/css/error.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+<body>
+ <div id="gbBox">
+  <form id="f" method="post">
+   <div class="left hide-on-small-only">
+    NAGOYAKA ICT
+   </div>
+   <div class="clearfix"></div>
+
+   <h1>タイムアウトしました</h1>
+   <div class="row">
+    <div class="col show-on-large hide-on-med-and-down l3 push-l1 left-align">
+     <img id="errorIcon" src="__BASE_URI__/img/common/timeout-butterfly.png" alt="タイムアウトアイコン" />
+    </div>
+    <div class="col s12 m8 push-m2 l6 push-l1">
+     <div id="errorMessage">
+      一定時間操作されなかったため、タイムアウトしました。再度サインインしてください。
+     </div>
+    </div>
+   </div>
+   <div class="center-align">
+    <a class="waves-effect waves-light btn green darken-1" href="__BASE_URI__/signIn.html">サインイン画面へ</a>
+   </div>
+  </form>
+ </div>
+
+ <!--  Scripts-->
+ <script src="__BASE_URI__/jQuery/jquery-2.2.4.min.js"></script>
+ <script src="__BASE_URI__/Materialize/js/materialize.js"></script>
+ <script src="__BASE_URI__/Materialize/js/init.js"></script>
+
+</body>
+</html>

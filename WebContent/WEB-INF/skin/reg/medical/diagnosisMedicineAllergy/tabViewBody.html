@@ -1,0 +1,128 @@
+<div id="tabViewBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>診断</caption>
+    <tr>
+     <th style="width:25%;">診断名</th>
+     <td>
+      __DIAGNOSIS_NAME__
+     </td>
+    </tr>
+    <tr>
+     <th>診断内容</th>
+     <td>
+      __DIAGNOSIS_DESC__
+     </td>
+    </tr>
+    <tr>
+     <th>既往歴</th>
+     <td>
+      __MEDICAL_HISTORY__
+     </td>
+    </tr>
+   </table>
+
+  </div>
+ </div>
+
+ <div class="row">
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>重要事項</caption>
+    <tr>
+     <th style="width:25%;">病態変化時の対処</th>
+     <td>
+      __EMERGENT_CHANGES__
+     </td>
+    </tr>
+    <tr>
+     <th>指示したこと</th>
+     <td>
+      __EMERGENCY_DIRECTIONS__
+     </td>
+    </tr>
+    <tr>
+     <th>留意すべきこと</th>
+     <td>
+      __EMERGENCY_NOTES__
+     </td>
+    </tr>
+    <tr>
+     <th>不整脈の有無</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"不明","attrs":{"disabled":"hasArrhythmia.U"}}
+      #cmn/inputRadioNormal{"label":"有","attrs":{"disabled":"hasArrhythmia.H"}}
+      #cmn/inputRadioNormal{"label":"無","attrs":{"disabled":"hasArrhythmia.N"}}
+     </td>
+    </tr>
+   </table>
+
+   <table class="bordered-responsive">
+    <caption>感染症</caption>
+    <tr>
+     <th style="width:25%;">感染症の有無</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"不明","attrs":{"disabled":"hasInfectiousDisease.U"}}
+      #cmn/inputRadioNormal{"label":"有","attrs":{"disabled":"hasInfectiousDisease.H"}}
+      #cmn/inputRadioNormal{"label":"無","attrs":{"disabled":"hasInfectiousDisease.N"}}
+     </td>
+    </tr>
+    <tr>
+     <th>種別</th>
+     <td>
+      __INFECTIOUS_DISEASE_KIND_DESC__
+     </td>
+    </tr>
+    <tr>
+     <th>伝達事項など</th>
+     <td>
+      __INFECTIOUS_DISEASE_ISSUES__
+     </td>
+    </tr>
+   </table>
+
+   <table class="bordered-responsive">
+    <caption>アレルギー</caption>
+    <tr>
+     <th style="width:25%;">アレルギーの有無</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"食物","attrs":{"disabled":"hasAllergie.E"}}
+      #cmn/inputCheckboxNormal{"label":"薬剤","attrs":{"disabled":"hasAllergie.M"}}
+      #cmn/inputCheckboxNormal{"label":"その他","attrs":{"disabled":"hasAllergie.O"}}
+     </td>
+    </tr>
+    <tr>
+     <th>種別</th>
+     <td>
+      __ALLERGIE_KIND_DESC__
+     </td>
+    </tr>
+    <tr>
+     <th>伝達事項など</th>
+     <td>
+      __ALLERGIE_ISSUES__
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <div class="docViewGroup">
+    <h4>薬</h4>
+    #reg/medical/diagnosisMedicineAllergy/viewListerNecessaryMedicine{"_necessaryMedicineList.demion":__NECESSARY_MEDICINE_LIST__MINION__}
+   </div>
+
+  </div>
+ </div>
+
+</div>

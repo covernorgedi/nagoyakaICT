@@ -1,0 +1,137 @@
+<section class="sheet" data-pt2-font-size="15">
+
+ <div data-pt2-left="100" data-pt2-width="850" data-pt2-top="120" data-pt2-height="1240">
+  <div data-pt2-height="200" style="border:none;">
+   <div style="float:left;" data-pt2-left="20">
+    <table>
+     <tr data-pt2-height="40">
+      <td style="border:none;">__RECEIVE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__STRING__</td>
+     </tr>
+     <tr data-pt2-height="40">
+      <td style="border:none;">__RECEIVE_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+     </tr>
+     <tr data-pt2-height="40">
+      <td style="border:none;">先生 御侍史</td>
+     </tr>
+    </table>
+   </div>
+
+   <div style="float:right;">
+    <table style="border:black solid 1px;">
+     <tr data-pt2-height="40">
+      <td style="border:none;" data-pt2-padding-left="20" data-pt2-padding-right="20">医療機関名</td>
+      <td style="border:none;text-align:left;" data-pt2-padding-left="20" data-pt2-padding-right="20" data-pt2-width="300">__SEND_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__</td>
+     </tr>
+     <tr data-pt2-height="40">
+      <td style="border:none;" data-pt2-padding-left="20" data-pt2-padding-right="20">所在地</td>
+      <td style="border:none;text-align:left;" data-pt2-padding-left="20" data-pt2-padding-right="20">__SEND_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__STRING__</td>
+     </tr>
+     <tr data-pt2-height="40">
+      <td style="border:none;" data-pt2-padding-left="20" data-pt2-padding-right="20">TEL</td>
+      <td style="border:none;text-align:left;" data-pt2-padding-left="20" data-pt2-padding-right="20">__SEND_ACTION__AGENT__ORGANIZATION_LIST__1__TELEPHONE__STRING__</td>
+     </tr>
+     <tr data-pt2-height="40">
+      <td style="border:none;" data-pt2-padding-left="20" data-pt2-padding-right="20">FAX</td>
+      <td style="border:none;text-align:left;" data-pt2-padding-left="20" data-pt2-padding-right="20">__SEND_ACTION__AGENT__ORGANIZATION_LIST__1__FAX_NUMBER__STRING__</td>
+     </tr>
+     <tr data-pt2-height="40">
+      <td style="border:none;" data-pt2-padding-left="20" data-pt2-padding-right="20">医師名</td>
+      <td style="border:none;text-align:left;" data-pt2-padding-left="20" data-pt2-padding-right="20">__SEND_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+     </tr>
+    </table>
+   </div>
+  </div>
+  <div style="clear:both;"></div>
+
+  <h1 style="text-align:center;" data-pt2-width="850" data-pt2-top="20" data-pt2-font-size="25" data-pt2-letter-spacing="5" data-pt2-text-indent="5">診療情報提供書</h1>
+
+  <div data-pt2-top="30">
+   <table data-pt2-width="850">
+    <tr data-pt2-height="40">
+     <td>患者氏名</td>
+     <td style="text-align:left;" data-pt2-padding-left="40">__CONSUME_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr data-pt2-height="40">
+     <td>患者住所</td>
+     <td style="text-align:left;" data-pt2-padding-left="40">
+      __CONSUME_ACTION__AGENT__PERSON_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_REGION__STRING__
+      __CONSUME_ACTION__AGENT__PERSON_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_LOCALITY__STRING__
+      __CONSUME_ACTION__AGENT__PERSON_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__STREET_ADDRESS__STRING__
+     </td>
+    </tr>
+    <tr data-pt2-height="40">
+     <td>電話番号</td>
+     <td style="text-align:left;" data-pt2-padding-left="40">__CONSUME_ACTION__AGENT__PERSON_LIST__1__TELEPHONE__STRING__</td>
+    </tr>
+    <tr data-pt2-height="40">
+     <td>生年月日</td>
+     <td style="text-align:left;" data-pt2-padding-left="40">
+      #cmn/date2YgmdJa(__CONSUME_ACTION__AGENT__PERSON_LIST__1__BIRTH_DATE__DATE__)
+     </td>
+    </tr>
+   </table>
+  </div>
+
+  <div data-pt2-top="40">
+   <table style="border:black solid 1px;" data-pt2-width="850">
+    <tr data-pt2-height="40">
+     <td style="border:none;text-align:left;" data-pt2-padding-left="20">【病名】</td>
+    </tr>
+    <tr data-pt2-height="60">
+     <td style="border:none;text-align:left;vertical-align:top;" data-pt2-padding-left="20" data-pt2-padding-top="10" data-pt2-padding-right="20">
+      __DISEASE_NAME__
+     </td>
+    </tr>
+    <tr data-pt2-height="40">
+     <td style="border:none;text-align:left;" data-pt2-padding-left="20">【紹介目的】</td>
+    </tr>
+    <tr data-pt2-height="80">
+     <td style="border:none;text-align:left;vertical-align:top;" data-pt2-padding-left="20" data-pt2-padding-top="10" data-pt2-padding-right="20">
+      __INTRODUCTION_AIM__
+     </td>
+    </tr>
+    <tr data-pt2-height="40">
+     <td style="border:none;text-align:left;" data-pt2-padding-left="20">【既往歴及び家族歴】</td>
+    </tr>
+    <tr data-pt2-height="80">
+     <td style="border:none;text-align:left;vertical-align:top;" data-pt2-padding-left="20" data-pt2-padding-top="10" data-pt2-padding-right="20">
+      __PAST_MEDICAL_HISTORY__
+     </td>
+    </tr>
+    <tr data-pt2-height="40">
+     <td style="border:none;text-align:left;" data-pt2-padding-left="20">【症状経過及び検査結果】</td>
+    </tr>
+    <tr data-pt2-height="80">
+     <td style="border:none;text-align:left;vertical-align:top;" data-pt2-padding-left="20" data-pt2-padding-top="10" data-pt2-padding-right="20">
+      __INSPECTION_RESULT__
+     </td>
+    </tr>
+    <tr data-pt2-height="40">
+     <td style="border:none;text-align:left;" data-pt2-padding-left="20">【治療履歴】</td>
+    </tr>
+    <tr data-pt2-height="80">
+     <td style="border:none;text-align:left;vertical-align:top;" data-pt2-padding-left="20" data-pt2-padding-top="10" data-pt2-padding-right="20">
+      __MEDICAL_TREATMENT_HISTORY__
+     </td>
+    </tr>
+    <tr data-pt2-height="40">
+     <td style="border:none;text-align:left;" data-pt2-padding-left="20">【現在の処方】</td>
+    </tr>
+    <tr data-pt2-height="80">
+     <td style="border:none;text-align:left;vertical-align:top;" data-pt2-padding-left="20" data-pt2-padding-top="10" data-pt2-padding-right="20">
+      __CURRENT_PRESCRIPTION__
+     </td>
+    </tr>
+    <tr data-pt2-height="40">
+     <td style="border:none;text-align:left;" data-pt2-padding-left="20">【備考】</td>
+    </tr>
+    <tr data-pt2-height="80">
+     <td style="border:none;text-align:left;vertical-align:top;" data-pt2-padding-left="20" data-pt2-padding-top="10" data-pt2-padding-right="20">
+      __REMARKS__
+     </td>
+    </tr>
+   </table>
+  </div>
+
+ </div>
+</section>

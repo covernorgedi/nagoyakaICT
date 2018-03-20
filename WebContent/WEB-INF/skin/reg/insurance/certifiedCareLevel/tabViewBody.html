@@ -1,0 +1,45 @@
+<div id="tabViewBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>認定情報</caption>
+    <tr>
+     <th>認定状態</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"認定","attrs":{"id":"certifiedStatus.1","name":"_certifiedStatus","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"申請中","attrs":{"id":"certifiedStatus.2","name":"_certifiedStatus","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"非該当","attrs":{"id":"certifiedStatus.3","name":"_certifiedStatus","disabled":"disabled"}}
+     </td>
+    </tr>
+    <tr>
+     <th>要介護度</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"要支援1","attrs":{"id":"careLevel.s1","name":"_careLevel","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"要支援2","attrs":{"id":"careLevel.s2","name":"_careLevel","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"要介護1","attrs":{"id":"careLevel.c1","name":"_careLevel","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"要介護2","attrs":{"id":"careLevel.c2","name":"_careLevel","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"要介護3","attrs":{"id":"careLevel.c3","name":"_careLevel","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"要介護4","attrs":{"id":"careLevel.c4","name":"_careLevel","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"要介護5","attrs":{"id":"careLevel.c5","name":"_careLevel","disabled":"disabled"}}
+     </td>
+    </tr>
+    <tr>
+     <th>認定有効期間</th>
+     <td>
+      #cmn/date2YgmdJa(__CERTIFIED_FROM__)
+      -
+      #cmn/date2YgmdJa(__CERTIFIED_TO__)
+     </td>
+    </tr>
+   </table>
+
+  </div>
+ </div>
+
+</div>

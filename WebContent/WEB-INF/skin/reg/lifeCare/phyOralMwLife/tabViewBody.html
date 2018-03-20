@@ -1,0 +1,57 @@
+<div id="tabViewBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+
+   <table class="bordered-responsive">
+    <caption>テーブル</caption>
+    <tr>
+     <th style="width:25%;">チェックボックス(disabled)</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"未分類","attrs":{"disabled":"mediCareType.U"}}
+      #cmn/inputCheckboxNormal{"label":"医療","attrs":{"disabled":"mediCareType.M"}}
+      #cmn/inputCheckboxNormal{"label":"介護","attrs":{"disabled":"mediCareType.C"}}
+      #cmn/inputCheckboxNormal{"label":"リハビリ","attrs":{"disabled":"mediCareType.R"}}
+      #cmn/inputCheckboxNormal{"label":"終末期","attrs":{"disabled":"mediCareType.T"}}
+     </td>
+    </tr>
+    <tr>
+     <th>テキスト</th>
+     <td>
+      __REMARKS__
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+    <caption>2列</caption>
+    <tr>
+     <th style="width:25%;">身長[cm]</th>
+     <td style="width:25%;">
+      __HEIGHT__
+     </td>
+     <th style="width:25%;">体重[kg]</th>
+     <td style="width:25%;">
+      __WEIGHT__
+     </td>
+    </tr>
+    <tr>
+     <th>ラジオボタン(disabled)</th>
+     <td colspan="3">
+      #cmn/inputRadioNormal{"label":"不明","attrs":{"disabled":"bloodAbo.U"}}
+      #cmn/inputRadioNormal{"label":"A型","attrs":{"disabled":"bloodAbo.A"}}
+      #cmn/inputRadioNormal{"label":"B型","attrs":{"disabled":"bloodAbo.B"}}
+      #cmn/inputRadioNormal{"label":"O型","attrs":{"disabled":"bloodAbo.O"}}
+      #cmn/inputRadioNormal{"label":"AB型","attrs":{"disabled":"bloodAbo.AB"}}
+     </td>
+    </tr>
+   </table>
+
+  </div>
+ </div>
+
+</div>

@@ -1,0 +1,61 @@
+<div class="hospitalizedFieldsetBlock">
+
+ <fieldset>
+  <legend>入退院__CONDS__ALL_IDX__</legend>
+  <div>
+   <div style="float:left;display:inline-block;width:50%;padding-left:0;padding-right:6px;">
+    #cmn/inputTextPickADate{"label":"入院年月日","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.fromDate","value":""CONDS__HOSPITALIZED__FROM_DATE""}}
+   </div>
+   <div style="float:left;display:inline-block;width:50%;padding-left:6px;padding-right:0;">
+    #cmn/inputTextTimePicker{"label":"入院時刻","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.fromTime","value":""CONDS__HOSPITALIZED__FROM_TIME""}}
+   </div>
+  </div>
+  <div style="clear:both;"></div>
+
+  <div>
+   <div style="float:left;display:inline-block;width:50%;padding-left:0;padding-right:6px;">
+    #cmn/inputTextPickADate{"label":"退院年月日","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.toDate","value":""CONDS__HOSPITALIZED__TO_DATE""}}
+   </div>
+   <div style="float:left;display:inline-block;width:50%;padding-left:6px;padding-right:0;">
+    #cmn/inputTextTimePicker{"label":"退院時刻","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.toTime","value":""CONDS__HOSPITALIZED__TO_TIME""}}
+   </div>
+  </div>
+  <div style="clear:both;"></div>
+
+  #cmn/inputTextNormal{"label":"施設名称","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.office.name.string","value":""CONDS__HOSPITALIZED__OFFICE__NAME__STRING""}}
+
+  <div class="checkboxGroup">
+   <label>診療科目</label><br />
+   #cmn/inputCheckboxNormal{"label":"内科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.internalMedicine","value":"conds.hospitalized.medicalSpecialtyList.internalMedicine"}}
+   #cmn/inputCheckboxNormal{"label":"呼吸器科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.pulmonaryMedicine","value":"conds.hospitalized.medicalSpecialtyList.pulmonaryMedicine"}}
+   #cmn/inputCheckboxNormal{"label":"老年医科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.geriatrics","value":"conds.hospitalized.medicalSpecialtyList.geriatrics"}}
+   #cmn/inputCheckboxNormal{"label":"消化器科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.gastroenterology","value":"conds.hospitalized.medicalSpecialtyList.gastroenterology"}}
+   #cmn/inputCheckboxNormal{"label":"内視鏡科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.endoscopy","value":"conds.hospitalized.medicalSpecialtyList.endoscopy"}}
+   #cmn/inputCheckboxNormal{"label":"糖尿病科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.diabetesMellitus","value":"conds.hospitalized.medicalSpecialtyList.diabetesMellitus"}}
+   #cmn/inputCheckboxNormal{"label":"代謝内分泌科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.endocrinology","value":"conds.hospitalized.medicalSpecialtyList.endocrinology"}}
+   #cmn/inputCheckboxNormal{"label":"神経科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.neurology","value":"conds.hospitalized.medicalSpecialtyList.neurology"}}
+   #cmn/inputCheckboxNormal{"label":"循環器科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.cardiology","value":"conds.hospitalized.medicalSpecialtyList.cardiology"}}
+   <br />
+   #cmn/inputCheckboxNormal{"label":"外科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.surgery","value":"conds.hospitalized.medicalSpecialtyList.surgery"}}
+   #cmn/inputCheckboxNormal{"label":"消化器外科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.gastroenterologicalSurgery","value":"conds.hospitalized.medicalSpecialtyList.gastroenterologicalSurgery"}}
+   #cmn/inputCheckboxNormal{"label":"整形外科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.orthopedics","value":"conds.hospitalized.medicalSpecialtyList.orthopedics"}}
+   #cmn/inputCheckboxNormal{"label":"皮膚科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.dermatology","value":"conds.hospitalized.medicalSpecialtyList.dermatology"}}
+   #cmn/inputCheckboxNormal{"label":"リハビリテーション科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.rehabilitation","value":"conds.hospitalized.medicalSpecialtyList.rehabilitation"}}
+   <br />
+   #cmn/inputCheckboxNormal{"label":"眼科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.ophthalmology","value":"conds.hospitalized.medicalSpecialtyList.ophthalmology"}}
+   #cmn/inputCheckboxNormal{"label":"耳鼻咽喉科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.otolaryngology","value":"conds.hospitalized.medicalSpecialtyList.otolaryngology"}}
+   #cmn/inputCheckboxNormal{"label":"脳神経外科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.neurosurgery","value":"conds.hospitalized.medicalSpecialtyList.neurosurgery"}}
+   #cmn/inputCheckboxNormal{"label":"精神医科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.psychiatry","value":"conds.hospitalized.medicalSpecialtyList.psychiatry"}}
+   <br />
+   #cmn/inputCheckboxNormal{"label":"放射線科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.radiology","value":"conds.hospitalized.medicalSpecialtyList.radiology"}}
+   #cmn/inputCheckboxNormal{"label":"麻酔科","attrs":{"id":"hospitalizedList.__CONDS__ALL_IDX__.medicalSpecialtyList.anaesthesiology","value":"conds.hospitalized.medicalSpecialtyList.anaesthesiology"}}
+
+  </div>
+
+  <legend>担当者</legend>
+  <a class="btn waves-effect waves-light green darken-1" href="#!" onclick="$.thingLister.addEmptyRow(this);">担当者を追加</a>
+  #reg/medical/inOutHospital/editListerHospitalizedUser{"hospitalizedList.__CONDS__ALL_IDX__.userList.demion":__CONDS__HOSPITALIZED__USER_LIST__MINION__}
+
+ </fieldset>
+
+</div>

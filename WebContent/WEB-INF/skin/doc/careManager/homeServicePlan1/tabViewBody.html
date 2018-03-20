@@ -1,0 +1,134 @@
+<div id="tabViewBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+
+   <table class="bordered-responsive">
+    <caption>居宅サービス計画作成者</caption>
+    <tr>
+     <th colspan="2">氏名</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">事業所の名称</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">事業所の所在地</th>
+     <td colspan="2">
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_REGION__STRING__
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_LOCALITY__STRING__
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__STREET_ADDRESS__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th colspan="2">電話番号</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__TELEPHONE__STRING__</td>
+    </tr>
+   </table>
+
+   <table class="bordered-responsive">
+   <caption>基本情報</caption>
+    <tr>
+     <th>初回・紹介・継続</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"初回","attrs":{"disabled":"continuousCategory.F"}}
+      #cmn/inputCheckboxNormal{"label":"紹介","attrs":{"disabled":"continuousCategory.I"}}
+      #cmn/inputCheckboxNormal{"label":"継続","attrs":{"disabled":"continuousCategory.C"}}
+     </td>
+    </tr>
+    <tr>
+     <th>認定済み・申請中</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"認定済み","attrs":{"disabled":"certificationCategory.C"}}
+      #cmn/inputRadioNormal{"label":"申請中","attrs":{"disabled":"certificationCategory.A"}}
+     </td>
+    </tr>
+    <tr>
+     <th>居宅サービス計画作成（変更）日</th>
+     <td>
+      #cmn/date2YgmdJa(__CREATIVE_WORK__DATE_MODIFIED__DATE_TIME__)
+     </td>
+    </tr>
+    <tr>
+     <th>初回居宅サービス計画作成日</th>
+     <td>
+      #cmn/date2YgmdJa(__CREATIVE_WORK__DATE_CREATED__DATE_TIME__)
+     </td>
+    </tr>
+    <tr>
+     <th>認定日</th>
+     <td>
+      #cmn/date2YgmdJa(__CERTIFIED_DATE__)
+     </td>
+    </tr>
+    <tr>
+     <th>認定の有効期間開始日</th>
+     <td>
+      #cmn/date2YgmdJa(__CERTIFIED_FROM__)
+     </td>
+    </tr>
+    <tr>
+     <th>認定の有効期間終了日</th>
+     <td>
+      #cmn/date2YgmdJa(__CERTIFIED_TO__)
+     </td>
+    </tr>
+    <tr>
+     <th>要介護状態区分</th>
+     <td>
+      #cmn/inputRadioNormal{"label":"要支援1","attrs":{"disabled":"careLevel.s1"}}
+      #cmn/inputRadioNormal{"label":"要支援2","attrs":{"disabled":"careLevel.s2"}}
+      #cmn/inputRadioNormal{"label":"要介護1","attrs":{"disabled":"careLevel.c1"}}
+      #cmn/inputRadioNormal{"label":"要介護2","attrs":{"disabled":"careLevel.c2"}}
+      #cmn/inputRadioNormal{"label":"要介護3","attrs":{"disabled":"careLevel.c3"}}
+      #cmn/inputRadioNormal{"label":"要介護4","attrs":{"disabled":"careLevel.c4"}}
+      #cmn/inputRadioNormal{"label":"要介護5","attrs":{"disabled":"careLevel.c5"}}
+     </td>
+    </tr>
+   </table>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <table class="bordered-responsive">
+   <caption>各記入内容</caption>
+    <tr>
+     <th style="width:25%;">利用者及び家族の生活に対する意向</th>
+     <td>
+      #cmn/insertBreak(__USER_INTENTION__)
+     </td>
+    </tr>
+    <tr>
+     <th>介護認定審査会の意見及びサービスの種類の指定</th>
+     <td>
+      #cmn/insertBreak(__SUGGESTION_AND_SERVICE_TYPE__)
+     </td>
+    </tr>
+    <tr>
+     <th>総合的な援助の方針</th>
+     <td>
+      #cmn/insertBreak(__ASSISTANCE_POLICY__)
+     </td>
+    </tr>
+    <tr>
+     <th>生活援助中心型の算定理由</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"一人暮らし","attrs":{"disabled":"calculationReason.S"}}
+      #cmn/inputCheckboxNormal{"label":"家族が障害、疾病等","attrs":{"disabled":"calculationReason.F"}}
+      #cmn/inputCheckboxNormal{"label":"その他","attrs":{"disabled":"calculationReason.O"}}
+     </td>
+    </tr>
+    <tr>
+     <th>生活援助中心型の算定理由その他</th>
+     <td>
+      __CALCULATION_REASON_OTHER__
+     </td>
+    </tr>
+   </table>
+
+  </div>
+ </div>
+
+</div>

@@ -1,0 +1,52 @@
+<div id="tabEditBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+   #cmn/inputHiddenNormal{"attrs":{"id":"consumeAction.agent.personList.1.minion"}}
+
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"creativeWork.minion"}}
+
+   <fieldset>
+    <legend>フォーム例</legend>
+
+    <div class="checkboxGroup">
+     <label>チェックボックス</label><br />
+     #cmn/inputCheckboxNormal{"label":"未分類","attrs":{"id":"mediCareType.U"}}
+     #cmn/inputCheckboxNormal{"label":"医療","attrs":{"id":"mediCareType.M"}}
+     #cmn/inputCheckboxNormal{"label":"介護","attrs":{"id":"mediCareType.C"}}
+     #cmn/inputCheckboxNormal{"label":"リハビリ","attrs":{"id":"mediCareType.R"}}
+     #cmn/inputCheckboxNormal{"label":"終末期","attrs":{"id":"mediCareType.T"}}
+    </div>
+
+    #cmn/textAreaNormal{"label":"テキストエリア","attrs":{"id":"remarks"}}
+
+   </fieldset>
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <fieldset>
+    <legend>2列</legend>
+    <div class="col s12 m12 l6" style="padding-left:0;">
+     #cmn/inputTextNormal{"label":"テキストボックス","attrs":{"id":"height"}}
+    </div>
+    <div class="col s12 m12 l6" style="padding-right:0;">
+     #cmn/inputTextNormal{"label":"テキストボックス","attrs":{"id":"weight"}}
+    </div>
+
+    <div class="radioGroup">
+     <label>ラジオボタン</label><br />
+     #cmn/inputRadioNormal{"label":"不明","attrs":{"id":"bloodAbo.U"}}
+     #cmn/inputRadioNormal{"label":"A型","attrs":{"id":"bloodAbo.A"}}
+     #cmn/inputRadioNormal{"label":"B型","attrs":{"id":"bloodAbo.B"}}
+     #cmn/inputRadioNormal{"label":"O型","attrs":{"id":"bloodAbo.O"}}
+     #cmn/inputRadioNormal{"label":"AB型","attrs":{"id":"bloodAbo.AB"}}
+    </div>
+
+   </fieldset>
+
+  </div>
+ </div>
+
+</div>

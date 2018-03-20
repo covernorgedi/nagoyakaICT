@@ -1,0 +1,30 @@
+<tr>
+ <td data-label="要介護度">
+  <div class="right">
+   <span class="truncate widthDate">
+    #cmn/langCareLevel(__CARE_LEVEL__)
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="認定期間">
+  <div class="right">
+   <span class="truncate widthPeriod">
+    #cmn/date2YmdJa(__CERTIFIED_FROM__)
+    -
+    #cmn/date2YmdJa(__CERTIFIED_TO__)
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="認定状態">
+  <div class="right">
+   <span class="truncate widthCode">
+    #cmn/langCertifiedStatus(__CERTIFIED_STATUS__)
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="操作">
+  #regSearchOperations(__SID__,__ACT__,__PATH__,__SEQ__)
+ </td>

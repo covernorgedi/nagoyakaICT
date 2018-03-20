@@ -1,0 +1,46 @@
+<div id="tabEditBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"患者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+   #cmn/inputHiddenNormal{"attrs":{"id":"consumeAction.agent.personList.1.minion"}}
+
+   <fieldset>
+    <legend>作成医師</legend>
+    #cmn/inputTextNormal{"label":"医師名","attrs":{"id":"sendAction.agent.personList.1.name.string"}}
+    #cmn/inputTextNormal{"label":"医療機関名称","attrs":{"id":"sendAction.agent.organizationList.1.name.string"}}
+    #cmn/inputTextNormal{"label":"医療機関所在地","attrs":{"id":"sendAction.agent.organizationList.1.address.string"}}
+    #cmn/inputTextNormal{"label":"医療機関TEL","attrs":{"id":"sendAction.agent.organizationList.1.telephone.string"}}
+    #cmn/inputTextNormal{"label":"医療機関FAX","attrs":{"id":"sendAction.agent.organizationList.1.faxNumber.string"}}
+   </fieldset>
+
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"creativeWork.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"sendAction.recipient.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"receiveAction.sender.minion"}}
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <fieldset>
+    <legend>送り先情報</legend>
+    #cmn/inputTextNormal{"label":"医療機関名称","attrs":{"id":"receiveAction.agent.organizationList.1.name.string"}}
+    #cmn/inputTextNormal{"label":"医療機関所在地","attrs":{"id":"receiveAction.agent.organizationList.1.address.string"}}
+    #cmn/inputTextNormal{"label":"氏名","attrs":{"id":"receiveAction.agent.personList.1.name.string"}}
+   </fieldset>
+
+   <fieldset>
+    <legend>診療情報</legend>
+    #cmn/inputTextNormal{"label":"病名","attrs":{"id":"diseaseName"}}
+    #cmn/textAreaNormal{"label":"紹介目的","attrs":{"id":"introductionAim"}}
+    #cmn/textAreaNormal{"label":"既往歴及び家族歴","attrs":{"id":"pastMedicalHistory"}}
+    #cmn/textAreaNormal{"label":"症状経過及び検査結果","attrs":{"id":"inspectionResult"}}
+    #cmn/textAreaNormal{"label":"治療履歴","attrs":{"id":"medicalTreatmentHistory"}}
+    #cmn/textAreaNormal{"label":"現在の処方","attrs":{"id":"currentPrescription"}}
+    #cmn/textAreaNormal{"label":"備考","attrs":{"id":"remarks"}}
+   </fieldset>
+
+  </div>
+ </div>
+
+</div>

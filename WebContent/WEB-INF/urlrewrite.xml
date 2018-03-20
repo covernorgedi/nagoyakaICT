@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 4.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite4.0.dtd">
+
+<urlrewrite>
+
+	<rule>
+		<name>IndexServlet1</name>
+		<from>/([\w/]+)\.(html|xml|json|jsonnp|csv|tsv|txt|ajax)(|#\w+)$</from>
+		<to>/Index?act=$1&amp;ext=$2</to>
+	</rule>
+
+	<rule>
+		<name>IndexServlet2</name>
+		<from>/([\w/]+)\.(html|xml|json|jsonnp|csv|tsv|txt|ajax)(|#\w+)\?([\w&amp;;=%]+)$</from>
+		<to>/Index?act=$1&amp;ext=$2&amp;$4</to>
+	</rule>
+
+	<rule>
+		<name>IndexServlet3</name>
+		<from>/([\w/]+)\.(html|xml|json|jsonnp|csv|tsv|txt|ajax)(/[\w/%\.\-\(\)~]+)/?(|#\w+)$</from>
+		<to>/Index?act=$1&amp;ext=$2&amp;path=$3</to>
+	</rule>
+
+	<rule>
+		<name>MediaServlet1</name>
+		<from>/(\w+)/media(/[\w/]+)\.(\w+)$</from>
+		<to>/Media?kind=$1&amp;path=$2.$3</to>
+	</rule>
+
+</urlrewrite>
+

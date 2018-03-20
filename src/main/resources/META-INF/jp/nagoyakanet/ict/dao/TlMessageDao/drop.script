@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS tl_message;
+
+DROP INDEX IF EXISTS idx_tl_message_uu;
+DROP INDEX IF EXISTS idx_tl_message_su;
+DROP INDEX IF EXISTS idx_tl_message_so;
+DROP INDEX IF EXISTS idx_tl_message_st;

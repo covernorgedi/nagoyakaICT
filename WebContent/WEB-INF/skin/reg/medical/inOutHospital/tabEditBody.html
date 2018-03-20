@@ -1,0 +1,26 @@
+<div id="tabEditBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+   #cmn/inputHiddenNormal{"attrs":{"id":"consumeAction.agent.personList.1.minion"}}
+
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"creativeWork.minion"}}
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <fieldset>
+    <legend>一覧</legend>
+    <a class="btn waves-effect waves-light green darken-1" href="#!" onclick="$.thingLister.addEmptyRow(this);">入退院を追加</a>
+    #reg/medical/inOutHospital/editListerHospitalizedSummary{"conds.hospitalizedList.minion":__HOSPITALIZED_LIST__MINION__}
+   </fieldset>
+
+  </div>
+ </div>
+
+ <div id="hospitalizedFieldsetRows">
+  #reg/medical/inOutHospital/editListerHospitalizedRows{"hospitalizedList.demion":__HOSPITALIZED_LIST__MINION__}
+ </div>
+
+</div>

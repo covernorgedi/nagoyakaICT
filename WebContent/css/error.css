@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Libre Baskerville";
+	src: local("Libre Baskerville"),
+		url("../Libre+Baskerville/libre-baskerville-v4-latin-regular.woff2") format("woff2"),
+		url("../Libre+Baskerville/libre-baskerville-v4-latin-regular.woff") format("woff");
+	font-weight: 400;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: /*CSS_REPLACE01*/#1DAC6C/*CSS_REPLACE01*/
+		/*CSS_REPLACE02*/url(../img/common/bg_green.jpg)/*CSS_REPLACE02*/
+		no-repeat center top fixed;
+	font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN",
+		Meiryo, sans-serif;
+}
+
+#gbBox {
+	height: 100%;
+	min-height: 100%;
+	background: url(../img/common/bg_horizon.png) center bottom repeat-x;
+}
+
+body>#gbBox {
+	height: auto;
+}
+
+h1 {
+	font-size: 124%;
+	text-align: center;
+}
+
+errorIcon {
+}
+
+#errorMessage {
+	width: 100%;
+	height: 300px;
+	padding: 10px 30px;
+	background-color: rgba(50,50,50,0.1);
+	border-radius: 8px;
+	overflow: auto;
+}
+

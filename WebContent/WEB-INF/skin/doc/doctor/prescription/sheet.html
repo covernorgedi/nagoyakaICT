@@ -1,0 +1,209 @@
+<section class="sheet" data-pt2-font-size="15">
+
+ <div data-pt2-left="100" data-pt2-width="850" data-pt2-top="120" data-pt2-height="1240" style="border:black solid 1px;">
+  <h1 data-pt2-top="5" data-pt2-font-size="35" data-pt2-letter-spacing="70" data-pt2-text-indent="70" style="text-align:center;">処方せん</h1>
+
+  <div data-pt2-top="20" style="text-align:center">（この処方せんは、どの保険薬局でも有効です。）</div>
+
+  <table data-pt2-width="780" data-pt2-height="80" data-pt2-top="30">
+   <tr data-pt2-height="50">
+    <td>公費負担者番号</td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO1"",0,1]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO1"",1,2]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO1"",2,3]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO1"",3,4]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO1"",4,5]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO1"",5,6]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO1"",6,7]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO1"",7,8]
+    </td>
+    <td>保険者番号</td>
+    <td data-pt2-width="30">
+     #cmn/substring[""INSURANCE_NO"",0,1]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""INSURANCE_NO"",1,2]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""INSURANCE_NO"",2,3]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""INSURANCE_NO"",3,4]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""INSURANCE_NO"",4,5]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""INSURANCE_NO"",5,6]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""INSURANCE_NO"",6,7]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""INSURANCE_NO"",7,8]
+    </td>
+   </tr>
+   <tr data-pt2-height="50">
+    <td colspan="2">公費負担医療<br />の受給者番号</td>
+    <td>
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO1"",0,1]
+    </td>
+    <td>
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO1"",1,2]
+    </td>
+    <td>
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO1"",2,3]
+    </td>
+    <td>
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO1"",3,4]
+    </td>
+    <td>
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO1"",4,5]
+    </td>
+    <td>
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO1"",5,6]
+    </td>
+    <td>
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO1"",6,7]
+    </td>
+    <td>被保険者証・被保険<br />者手帳の記号・番号</td>
+    <td colspan="8">
+     <span data-pt2-width="70">
+     __INSURED_CODE__
+     </span>
+     ・
+     __INSURED_NO__
+    </td>
+   </tr>
+  </table>
+
+  <table data-pt2-width="780" data-pt2-height="80" data-pt2-top="50">
+   <tr data-pt2-height="70">
+    <td rowspan="3">患<br /><br />者</td>
+    <td>氏名</td>
+    <td data-pt2-width="180" colspan="3">
+     __CONSUME_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__
+    </td>
+    <td colspan="10" rowspan="3" style="border-top:none;border-right:none;">
+    </td>
+   </tr>
+   <tr data-pt2-height="70">
+    <td>生年月日</td>
+    <td colspan="2"></td>
+    <td>男・女</td>
+   </tr>
+   <tr data-pt2-height="50">
+    <td>区分</td>
+    <td>被保険者</td>
+    <td colspan="2">被扶養者</td>
+   </tr>
+   <tr data-pt2-height="70">
+    <td colspan="2">交付年月日</td>
+    <td colspan="3"></td>
+    <td colspan="2" data-pt2-width="160" data-pt2-letter-spacing="10" data-pt2-text-indent="10">処方せんの<br />使用期間</td>
+    <td colspan="8">
+    </td>
+   </tr>
+   <tr data-pt2-height="270">
+    <td>処<br /><br />方</td>
+    <td data-pt2-padding-top="5" style="vertical-align:top;">変更不可</td>
+    <td colspan="13" data-pt2-padding-top="5" style="vertical-align:top;">
+     <div data-pt2-padding-top="5" data-pt2-padding-right="3" style="float:left;display:inline-block;transform:scale(1,2);">〔</div>
+     <div data-pt2-font-size="12" style="float:left;display:inline-block;">個々の処方薬について、後発医薬品（ジェネリック医薬品）への変更に差し支えがあると判断した場合<br />
+      には、「変更不可」欄に「✓」又は「×」を記載し、「保険医署名」欄に署名又は記名・押印すること。</div>
+     <div data-pt2-padding-top="5" data-pt2-padding-left="3" style="float:left;display:inline-block;transform:scale(1,2);">〕</div>
+     <div style="clear:both;"></div>
+    </td>
+   </tr>
+   <tr data-pt2-height="100">
+    <td rowspan="2">備<br />考</td>
+    <td colspan="5" data-pt2-padding-left="5" data-pt2-padding-top="5" style="vertical-align:top;">
+     <div style="float:left;display:inline-block;">保険医署名</div>
+     <div data-pt2-padding-top="5" data-pt2-padding-right="3" style="float:left;display:inline-block;transform:scale(1,2);">〔</div>
+     <div data-pt2-font-size="12" style="float:left;display:inline-block;">「変更不可」欄に「✓」又は「×」を記載した<br />
+      場合は、署名又は記名・押印すること。</div>
+     <div data-pt2-padding-top="5" data-pt2-padding-left="3" style="float:left;display:inline-block;transform:scale(1,2);">〕</div>
+     <div style="clear:both;"></div>
+    </td>
+    <td colspan="9" style="border-bottom:none;"></td>
+   </tr>
+   <tr data-pt2-height="100">
+    <td colspan="14" data-pt2-padding-top="5" style="vertical-align:top;border-top:none;">
+    </td>
+   </tr>
+   <tr data-pt2-height="50">
+    <td colspan="2">調剤済年月日</td>
+    <td colspan="3"></td>
+    <td colspan="2">公費負担者番号</td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO2"",0,1]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO2"",1,2]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO2"",2,3]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO2"",3,4]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO2"",4,5]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO2"",5,6]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO2"",6,7]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_DEFRAYER_NO2"",7,8]
+    </td>
+   </tr>
+   <tr data-pt2-height="80">
+    <td colspan="2" data-pt2-line-height="18">保険薬局の所在<br />地及び名称<br />保険薬剤師氏名</td>
+    <td colspan="3"></td>
+    <td colspan="3">公費負担医療の<br />受給者番号</td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO2"",0,1]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO2"",1,2]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO2"",2,3]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO2"",3,4]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO2"",4,5]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO2"",5,6]
+    </td>
+    <td data-pt2-width="30">
+     #cmn/substring[""PUBLICLY_FUNDED_RECIPIENT_NO2"",6,7]
+    </td>
+   </tr>
+  </table>
+
+
+ </div>
+
+</section>

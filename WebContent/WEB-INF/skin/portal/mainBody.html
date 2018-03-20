@@ -1,0 +1,37 @@
+<div id="mainBody">
+
+ <div class="row newMessageBox" style="margin:0;padding:0 .5rem;">
+  <div class="input-field col s12">
+   <textarea id="newMessageText" class="materialize-textarea"></textarea>
+   <label for="newMessageText">新規メッセージ</label>
+  </div>
+  <div class="col s12">
+   <div>
+    <button id="newMessageToTeamSubmit" class="btn waves-effect waves-light green darken-1" style="width:100%;margin-bottom:10px;" onclick="sendToTeam(__SIGN_IN_USER__OFFICE_MEMBER_OF__OFFICE_LIST__1__SEQ__); return false;">
+     <span class="truncate width200px" style="display:inline;">
+      __SIGN_IN_USER__TEAM_MEMBER_OF__TEAM_LIST__1__NAME__STRING__
+     </span>
+     に送信
+    </button>
+   </div>
+   <div>
+    <button id="newMessageToOfficeSubmit" class="btn waves-effect waves-light green darken-1" style="width:100%;margin-bottom:10px;" onclick="sendToOffice(__SIGN_IN_USER__OFFICE_MEMBER_OF__OFFICE_LIST__1__SEQ__); return false;">
+     <span class="truncate width200px" style="display:inline;">
+      __SIGN_IN_USER__OFFICE_MEMBER_OF__OFFICE_LIST__1__NAME__STRING__
+     </span>
+     に送信
+    </button>
+   </div>
+   <div>
+    <a id="newMessageAdvancedBtn" class="btn waves-effect waves-light green darken-1 modal-trigger" href="#newMessageAdvancedDlg" style="width:100%;margin-bottom:10px;">
+     詳細な送信
+    </a>
+   </div>
+  </div>
+ </div>
+ #dlg/newMessageAdvancedDlg(__SID__)
+
+ <ul id="timeline" class="collection">
+  <li id="timelineNone" class="collection-item grey lighten-3">メッセージはありません</li>
+ </ul>
+</div>

@@ -1,0 +1,110 @@
+<div id="tabEditBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"患者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+   #cmn/inputHiddenNormal{"attrs":{"id":"consumeAction.agent.personList.1.minion"}}
+
+   <fieldset>
+    <legend>被保険者情報</legend>
+    #cmn/inputTextNormal{"label":"保険者番号","attrs":{"id":"insuranceNo"}}
+    <div class="col s12 m12 l6" style="padding-left:0;">
+     #cmn/inputTextNormal{"label":"被保険者証・被保険者手帳の記号","attrs":{"id":"insuredCode"}}
+    </div>
+    <div class="col s12 m12 l6" style="padding-right:0;">
+     #cmn/inputTextNormal{"label":"被保険者証・被保険者手帳の番号","attrs":{"id":"insuredNo"}}
+    </div>
+    <div class="radioGroup">
+     <label>区分</label>
+     #cmn/inputRadioNormal{"label":"なし","attrs":{"id":"dependent.0"}}
+     #cmn/inputRadioNormal{"label":"被保険者","attrs":{"id":"dependent.1"}}
+     #cmn/inputRadioNormal{"label":"被扶養者","attrs":{"id":"dependent.2"}}
+    </div>
+   </fieldset>
+
+   <table class="bordered-responsive">
+    <caption>保険医情報</caption>
+    <tr>
+     <th colspan="2">氏名</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">保険医療機関の名称</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">保険医療機関の所在地</th>
+     <td colspan="2">
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_REGION__STRING__
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_LOCALITY__STRING__
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__STREET_ADDRESS__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th colspan="2">電話番号</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__TELEPHONE__STRING__</td>
+    </tr>
+    <tr>
+     <th style="width:25%;">都道府県番号</th>
+     <td style="width:25%;"></td>
+     <th style="width:25%;">点数表番号</th>
+     <td style="width:25%;"></td>
+    </tr>
+    <tr>
+     <th colspan="2">医療機関コード</th>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.agent.personList.1.name.string"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.agent.organizationList.1.name.string"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.agent.organizationList.1.address.string"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.agent.organizationList.1.telephone.string"}}
+
+   <fieldset>
+    <legend>薬剤師情報</legend>
+    #cmn/inputTextNormal{"label":"氏名","attrs":{"id":"reviewAction.agent.personList.1.name.string"}}
+    #cmn/inputTextNormal{"label":"保険薬局の名称","attrs":{"id":"reviewAction.agent.organizationList.1.name.string"}}
+    #cmn/inputTextNormal{"label":"保険薬局の所在地","attrs":{"id":"reviewAction.agent.organizationList.1.address.string"}}
+    #cmn/inputTextPickADate{"label":"調剤済年月日","attrs":{"id":"reviewAction.endTime.dateTime"}}
+   </fieldset>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+   <fieldset>
+    <legend>処方情報</legend>
+    #cmn/inputTextPickADate{"label":"交付年月日","attrs":{"id":"creativeWork.datePublished.date"}}
+    #cmn/inputTextPickADate{"label":"処方せんの使用期間","attrs":{"id":"creativeWork.expires.date"}}
+    <div class="checkboxGroup">
+     <label>ジェネリック医薬品1</label>
+     #cmn/inputCheckboxNormal{"label":"変更不可","attrs":{"id":"formulaList.1.canGeneric"}}
+    </div>
+    #cmn/textAreaNormal{"label":"処方1","attrs":{"id":"formulaList.1.entry"}}
+    <div class="checkboxGroup">
+     <label>ジェネリック医薬品2</label>
+     #cmn/inputCheckboxNormal{"label":"変更不可","attrs":{"id":"formulaList.2.canGeneric"}}
+    </div>
+    #cmn/textAreaNormal{"label":"処方2","attrs":{"id":"formulaList.2.entry"}}
+    <div class="checkboxGroup">
+     <label>ジェネリック医薬品3</label>
+     #cmn/inputCheckboxNormal{"label":"変更不可","attrs":{"id":"formulaList.3.canGeneric"}}
+    </div>
+    #cmn/textAreaNormal{"label":"処方3","attrs":{"id":"formulaList.3.entry"}}
+    <div class="checkboxGroup">
+     <label>ジェネリック医薬品4</label>
+     #cmn/inputCheckboxNormal{"label":"変更不可","attrs":{"id":"formulaList.4.canGeneric"}}
+    </div>
+    #cmn/textAreaNormal{"label":"処方4","attrs":{"id":"formulaList.4.entry"}}
+    #cmn/textAreaNormal{"label":"備考","attrs":{"id":"remarks"}}
+   </fieldset>
+
+   <fieldset>
+    <legend>公費負担者情報</legend>
+    #cmn/inputTextNormal{"label":"第一公費負担者番号","attrs":{"id":"publiclyFundedDefrayerNo1"}}
+    #cmn/inputTextNormal{"label":"第一公費負担医療の受給者番号","attrs":{"id":"publiclyFundedRecipientNo1"}}
+    #cmn/inputTextNormal{"label":"第二公費負担者番号","attrs":{"id":"publiclyFundedDefrayerNo2"}}
+    #cmn/inputTextNormal{"label":"第二公費負担医療の受給者番号","attrs":{"id":"publiclyFundedRecipientNo2"}}
+   </fieldset>
+  </div>
+ </div>
+
+</div>

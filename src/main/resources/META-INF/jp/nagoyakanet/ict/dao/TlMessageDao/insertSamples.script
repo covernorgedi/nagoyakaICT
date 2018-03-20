@@ -1,0 +1,143 @@
+INSERT INTO tl_message
+VALUES(
+ 1, -- seq
+ '川辺　祐介（東海介護センター）', -- display_name
+ 'message', -- kind
+ NULL, -- sub_kind
+ '<p>肉の多い大乃国</p><p>池の名は知らず珍し花の景</p>', -- body
+ 'img/sample/kawabe.jpg', -- icon
+ '{}', -- message_to
+ 'N', -- emergency
+ 1000, -- emg_sort
+ '2017-08-11 05:42:00',
+ 8,
+ '2017-08-11 05:42:00',
+ 8,
+ '330004',
+ '川辺　祐介',
+ 7,
+ '1000000082',
+ '東海介護センター',
+ 2,
+ 220,
+ '新川　光彦さんのケアチーム',
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ 2,
+ 220,
+ '新川　光彦さんのケアチーム',
+ NULL,
+ NULL
+);
+
+INSERT INTO tl_message
+VALUES(
+ 2, -- seq
+ '坪井　美希（寺島調剤薬局）', -- display_name
+ 'userActivity', -- kind
+ NULL, -- sub_kind
+ '<p>居宅療養管理指導報告書を作成しました。</p><a class="download" href=""><i class="material-icons tiny">file_download</i> 居宅療養管理指導報告書_20170811_1737.pdf</a>', -- body
+ 'img/sample/tsuboi.jpg', -- icon
+ '{}', -- message_to
+ 'N', -- emergency
+ 1000, -- emg_sort
+ '2017-08-11 17:37:00',
+ 4,
+ '2017-08-11 17:37:00',
+ 4,
+ '330010',
+ '坪井　美希',
+ 4,
+ '1200000077',
+ '寺島調剤薬局',
+ 2,
+ 220,
+ '新川　光彦さんのケアチーム',
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ 2,
+ 220,
+ '新川　光彦さんのケアチーム',
+ NULL,
+ NULL
+);
+
+INSERT INTO tl_message
+VALUES(
+ 3, -- seq
+ '久野　ひろ子（名古屋訪問看護ステーション）', -- display_name
+ 'message', -- kind
+ NULL, -- sub_kind
+ '<p>しんぶんし</p><p>スキトキメキトキス</p>', -- body
+ 'img/sample/kuno.jpg', -- icon
+ '{}', -- message_to
+ 'N', -- emergency
+ 1000, -- emg_sort
+ '2017-08-12 12:05:00',
+ 5,
+ '2017-08-12 12:05:00',
+ 5,
+ '330003',
+ '久野　ひろ子',
+ 5,
+ '1000000081',
+ '名古屋訪問看護ステーション',
+ 2,
+ 220,
+ '新川　光彦さんのケアチーム',
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ 2,
+ 220,
+ '新川　光彦さんのケアチーム',
+ NULL,
+ NULL
+);
+
+INSERT INTO tl_message
+VALUES(
+ 4, -- seq
+ '武田　拓夫（山中病院）', -- display_name
+ 'message', -- kind
+ NULL, -- sub_kind
+ '<p>竹藪焼けた。</p><p>私負けましたわ。</p>', -- body
+ 'img/sample/takeda.jpg', -- icon
+ '{}', -- message_to
+ 'N', -- emergency
+ 1000, -- emg_sort
+ '2017-08-15 17:15:00',
+ 2,
+ '2017-08-15 17:15:00',
+ 2,
+ '330002',
+ '武田　拓夫',
+ 2,
+ '1000000080',
+ '山中病院',
+ 2,
+ 220,
+ '新川　光彦さんのケアチーム',
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ NULL,
+ 2,
+ 220,
+ '新川　光彦さんのケアチーム',
+ NULL,
+ NULL
+);

@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS msg_timeline;
+
+DROP INDEX IF EXISTS idx_msg_timeline_su;
+DROP INDEX IF EXISTS idx_msg_timeline_so;
+DROP INDEX IF EXISTS idx_msg_timeline_st;

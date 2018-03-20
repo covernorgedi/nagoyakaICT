@@ -1,0 +1,110 @@
+<div id="tabEditBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+   #cmn/inputHiddenNormal{"attrs":{"id":"consumeAction.agent.personList.1.minion"}}
+
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"creativeWork.minion"}}
+
+   <table class="bordered-responsive">
+    <caption>居宅サービス計画作成者</caption>
+    <tr>
+     <th colspan="2">氏名</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">事業所の名称</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">事業所の所在地</th>
+     <td colspan="2">
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_REGION__STRING__
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_LOCALITY__STRING__
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__STREET_ADDRESS__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th colspan="2">電話番号</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__TELEPHONE__STRING__</td>
+    </tr>
+   </table>
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.agent.personList.1.name.string"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.agent.organizationList.1.name.string"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.agent.organizationList.1.address.string"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.agent.organizationList.1.telephone.string"}}
+
+   <fieldset>
+    <legend>基本情報</legend>
+
+    <div class="col s12 m12 l6" style="padding-left:0;">
+     <div class="checkboxGroup">
+      <label>初回・紹介・継続</label><br />
+      #cmn/inputCheckboxNormal{"label":"初回","attrs":{"id":"continuousCategory.F"}}
+      #cmn/inputCheckboxNormal{"label":"紹介","attrs":{"id":"continuousCategory.I"}}
+      #cmn/inputCheckboxNormal{"label":"継続","attrs":{"id":"continuousCategory.C"}}
+     </div>
+    </div>
+    <div class="col s12 m12 l6" style="padding-right:0;">
+     <div class="radioGroup">
+      <label>認定済み・申請中</label><br />
+      #cmn/inputRadioNormal{"label":"認定済み","attrs":{"id":"certificationCategory.C"}}
+      #cmn/inputRadioNormal{"label":"申請中","attrs":{"id":"certificationCategory.A"}}
+     </div>
+    </div>
+
+    <div class="col s12 m12 l6" style="padding-left:0;">
+     #cmn/inputTextPickADate{"label":"居宅サービス計画作成（変更）日","attrs":{"id":"creativeWork.dateModified.date"}}
+    </div>
+    <div class="col s12 m12 l6" style="padding-right:0;">
+     #cmn/inputTextPickADate{"label":"初回居宅サービス計画作成日","attrs":{"id":"creativeWork.dateCreated.date"}}
+    </div>
+
+    #cmn/inputTextPickADate{"label":"認定日","attrs":{"id":"certifiedDate"}}
+
+    <div class="col s12 m12 l6" style="padding-left:0;">
+     #cmn/inputTextPickADate{"label":"認定の有効期間開始日","attrs":{"id":"certifiedFrom"}}
+    </div>
+    <div class="col s12 m12 l6" style="padding-right:0;">
+     #cmn/inputTextPickADate{"label":"認定の有効期間終了日","attrs":{"id":"certifiedTo"}}
+    </div>
+
+    <div class="radioGroup">
+     <label>要介護状態区分</label><br />
+     #cmn/inputRadioNormal{"label":"要支援1","attrs":{"id":"careLevel.s1"}}
+     #cmn/inputRadioNormal{"label":"要支援2","attrs":{"id":"careLevel.s2"}}
+     #cmn/inputRadioNormal{"label":"要介護1","attrs":{"id":"careLevel.c1"}}
+     #cmn/inputRadioNormal{"label":"要介護2","attrs":{"id":"careLevel.c2"}}
+     #cmn/inputRadioNormal{"label":"要介護3","attrs":{"id":"careLevel.c3"}}
+     #cmn/inputRadioNormal{"label":"要介護4","attrs":{"id":"careLevel.c4"}}
+     #cmn/inputRadioNormal{"label":"要介護5","attrs":{"id":"careLevel.c5"}}
+    </div>
+
+   </fieldset>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <fieldset>
+    <legend>各記入内容</legend>
+
+    #cmn/textAreaNormal{"label":"利用者及び家族の生活に対する意向","attrs":{"id":"userIntention"}}
+    #cmn/textAreaNormal{"label":"介護認定審査会の意見及びサービスの種類の指定","attrs":{"id":"suggestionAndServiceType"}}
+    #cmn/textAreaNormal{"label":"総合的な援助の方針","attrs":{"id":"assistancePolicy"}}
+
+    <div class="checkboxGroup">
+     <label>生活援助中心型の算定理由</label><br />
+     #cmn/inputCheckboxNormal{"label":"一人暮らし","attrs":{"id":"calculationReason.S"}}
+     #cmn/inputCheckboxNormal{"label":"家族が障害、疾病等","attrs":{"id":"calculationReason.F"}}
+     #cmn/inputCheckboxNormal{"label":"その他","attrs":{"id":"calculationReason.O"}}
+    </div>
+
+    #cmn/inputTextNormal{"label":"生活援助中心型の算定理由その他","attrs":{"id":"calculationReasonOther"}}
+
+   </fieldset>
+  </div>
+ </div>
+
+</div>

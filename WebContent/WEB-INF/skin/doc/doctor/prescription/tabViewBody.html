@@ -1,0 +1,167 @@
+<div id="tabViewBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"患者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+
+   <table class="bordered-responsive">
+    <caption>被保険者情報</caption>
+    <tr>
+     <th colspan="2">保険者番号</th>
+     <td colspan="2">__INSURANCE_NO__</td>
+    </tr>
+    <tr>
+     <th style="width:25%;">被保険者証・被保険者手帳の記号</th>
+     <td style="width:25%;">__INSURED_CODE__</td>
+     <th style="width:25%;">被保険者証・被保険者手帳の番号</th>
+     <td style="width:25%;">__INSURED_NO__</td>
+    </tr>
+    <tr>
+     <th colspan="2">区分</th>
+     <td colspan="2">
+      #cmn/inputRadioNormal{"label":"なし","attrs":{"id":"dependent.0","name":"_dependent","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"被保険者","attrs":{"id":"dependent.1","name":"_dependent","disabled":"disabled"}}
+      #cmn/inputRadioNormal{"label":"被扶養者","attrs":{"id":"dependent.2","name":"_dependent","disabled":"disabled"}}
+     </td>
+    </tr>
+   </table>
+
+   <table class="bordered-responsive">
+    <caption>保険医情報</caption>
+    <tr>
+     <th colspan="2">氏名</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">保険医療機関の名称</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th colspan="2">保険医療機関の所在地</th>
+     <td colspan="2">
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_REGION__STRING__
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__ADDRESS_LOCALITY__STRING__
+      __CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__POSTAL_ADDRESS_LIST__1__STREET_ADDRESS__STRING__
+     </td>
+    </tr>
+    <tr>
+     <th colspan="2">電話番号</th>
+     <td colspan="2">__CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__TELEPHONE__STRING__</td>
+    </tr>
+    <tr>
+     <th style="width:25%;">都道府県番号</th>
+     <td style="width:25%;"></td>
+     <th style="width:25%;">点数表番号</th>
+     <td style="width:25%;"></td>
+    </tr>
+    <tr>
+     <th colspan="2">医療機関コード</th>
+     <td colspan="2"></td>
+    </tr>
+   </table>
+
+   <table class="bordered-responsive">
+    <caption>薬剤師情報</caption>
+    <tr>
+     <th>氏名</th>
+     <td>__REVIEW_ACTION__AGENT__PERSON_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th>保険薬局の名称</th>
+     <td>__REVIEW_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING__</td>
+    </tr>
+    <tr>
+     <th>保険薬局の所在地</th>
+     <td>__REVIEW_ACTION__AGENT__ORGANIZATION_LIST__1__ADDRESS__STRING__</td>
+    </tr>
+    <tr>
+     <th>調剤済年月日</th>
+     <td>__REVIEW_ACTION__END_TIME__DATE_TIME__</td>
+    </tr>
+   </table>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+   <table class="bordered-responsive">
+    <caption>処方情報</caption>
+    <tr>
+     <th>交付年月日</th>
+     <td>
+      #cmn/date2YgmdJa(__CREATIVE_WORK__DATE_PUBLISHED__DATE__)
+     </td>
+    </tr>
+    <tr>
+     <th>処方せんの使用期間</th>
+     <td>
+      #cmn/date2YgmdJa(__CREATIVE_WORK__EXPIRES__DATE__)
+     </td>
+    </tr>
+    <tr>
+     <th>ジェネリック医薬品1</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"変更不可","attrs":{"id":"formulaList.1.canGeneric","name":"_formulaList.1.canGeneric","disabled":"disabled"}}
+     </td>
+    </tr>
+    <tr>
+     <th>処方1</th>
+     <td>__FORMULA_LIST__1__ENTRY__</td>
+    </tr>
+    <tr>
+     <th>ジェネリック医薬品2</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"変更不可","attrs":{"id":"formulaList.2.canGeneric","name":"_formulaList.2.canGeneric","disabled":"disabled"}}
+     </td>
+    </tr>
+    <tr>
+     <th>処方2</th>
+     <td>__FORMULA_LIST__2__ENTRY__</td>
+    </tr>
+    <tr>
+     <th>ジェネリック医薬品3</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"変更不可","attrs":{"id":"formulaList.3.canGeneric","name":"_formulaList.3.canGeneric","disabled":"disabled"}}
+     </td>
+    </tr>
+    <tr>
+     <th>処方3</th>
+     <td>__FORMULA_LIST__3__ENTRY__</td>
+    </tr>
+    <tr>
+     <th>ジェネリック医薬品4</th>
+     <td>
+      #cmn/inputCheckboxNormal{"label":"変更不可","attrs":{"id":"formulaList.4.canGeneric","name":"_formulaList.4.canGeneric","disabled":"disabled"}}
+     </td>
+    </tr>
+    <tr>
+     <th>処方4</th>
+     <td>__FORMULA_LIST__4__ENTRY__</td>
+    </tr>
+    <tr>
+     <th>備考</th>
+     <td>__REMARKS__</td>
+    </tr>
+   </table>
+
+   <table class="bordered-responsive">
+    <caption>公費負担者情報</caption>
+    <tr>
+     <th>第一公費負担者番号</th>
+     <td>__PUBLICLY_FUNDED_DEFRAYER_NO1__</td>
+    </tr>
+    <tr>
+     <th>第一公費負担医療の受給者番号</th>
+     <td>__PUBLICLY_FUNDED_RECIPIENT_NO1__</td>
+    </tr>
+    <tr>
+     <th>第二公費負担者番号</th>
+     <td>__PUBLICLY_FUNDED_DEFRAYER_NO2__</td>
+    </tr>
+    <tr>
+     <th>第二公費負担医療の受給者番号</th>
+     <td>__PUBLICLY_FUNDED_RECIPIENT_NO2__</td>
+    </tr>
+   </table>
+  </div>
+ </div>
+
+</div>

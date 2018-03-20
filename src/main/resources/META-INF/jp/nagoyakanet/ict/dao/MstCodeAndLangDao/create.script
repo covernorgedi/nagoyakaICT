@@ -1,0 +1,22 @@
+CREATE TABLE mst_code_and_lang(
+ seq BIGINT AUTO_INCREMENT PRIMARY KEY,
+ act VARCHAR(100) NULL,
+ type VARCHAR(100) NULL,
+ code VARCHAR(100) NOT NULL,
+ sort INT DEFAULT 0,
+ en VARCHAR(100) NOT NULL,
+ ja VARCHAR(100) NOT NULL,
+ identifier VARCHAR(100) NOT NULL,
+ remarks CLOB NULL,
+ created_at TIMESTAMP NULL,
+ created_by BIGINT NULL,
+ updated_at TIMESTAMP NULL,
+ updated_by BIGINT NULL,
+ expired_at TIMESTAMP NULL,
+ expired_by BIGINT NULL
+);
+
+CREATE INDEX idx_mst_code_and_lang_atcs ON mst_code_and_lang(act,type,code,sort);
+CREATE INDEX idx_mst_code_and_lang_tcs ON mst_code_and_lang(type,code,sort);
+CREATE INDEX idx_mst_code_and_lang_cs ON mst_code_and_lang(code,sort);
+CREATE INDEX idx_mst_code_and_lang_i ON mst_code_and_lang(identifier);

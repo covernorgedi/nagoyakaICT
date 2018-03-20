@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Libre Baskerville";
+	src: local("Libre Baskerville"),
+		url("../Libre+Baskerville/libre-baskerville-v4-latin-regular.woff2") format("woff2"),
+		url("../Libre+Baskerville/libre-baskerville-v4-latin-regular.woff") format("woff");
+	font-weight: 400;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: /*CSS_REPLACE01*/#1DAC6C/*CSS_REPLACE01*/
+		/*CSS_REPLACE02*/url(../img/common/bg_green.jpg)/*CSS_REPLACE02*/
+		no-repeat center top fixed;
+	font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN",
+		Meiryo, sans-serif;
+}
+
+#gbBox {
+	height: 100%;
+	min-height: 100%;
+	background: url(../img/common/bg_horizon.png) center bottom repeat-x;
+}
+
+body>#gbBox {
+	height: auto;
+}
+
+#signInBox {
+	margin: auto;
+}
+
+#signInBox h1 {
+	color: #8fd;
+	font-size: 28px;
+	font-weight: 500;
+	letter-spacing: 10px;
+	text-align: center;
+}
+
+#signInBox p {
+	font-size: 17px;
+	color: /*CSS_REPLACE05*/#129570/*CSS_REPLACE05*/;
+	letter-spacing: -0.8px;
+}
+
+#signInBox table {
+	margin: 0;
+	padding: 0;
+	border: 1px solid #FFF;
+	background-color: rgba(255, 255, 255, 0.55);
+}
+
+.btn, .btn-large,
+.btn-flat {
+	text-transform: none;
+}
+
+.signInBtn {
+	text-align: center;
+}
+
+.signInBtn button {
+	width: 100%;
+	font-family: "Libre Baskerville", serif;
+	font-size: 28px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.signInBtn button img {
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.signInBtn2 {
+	text-align: center;
+}
+
+.signInBtn2 button {
+	width: 100%;
+	margin: 4px 0;
+	font-family: "Libre Baskerville", serif;
+	font-size: 16px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.signInBtn2 button img {
+	margin-right: 10px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#signInBox2 {
+	text-align: center;
+}
+
+#signInBox2 ul {
+	margin: 25px 0 0 30px;
+	font-size: 0;
+	text-align: left;
+	display: inline-block;
+}
+
+#signInBox2 ul li {
+	list-style-image: url(../img/common/arrow_white.png);
+	font-size: 17px;
+}
+
+#signInBox2 ul li a {
+	color: #FFF;
+}

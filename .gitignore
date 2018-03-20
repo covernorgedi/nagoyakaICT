@@ -1,0 +1,11 @@
+/target/
+/work/
+/C:/
+*.DS_Store
+*.class
+/.apt_generated/
+/WebContent/WEB-INF/cache/
+/src/main/resources/org/kyojo/core/Constants.properties
+/src/main/resources/org/kyojo/gbd/DataSources.properties
+/WebContent/WEB-INF/db/h2.mv.db
+/WebContent/WEB-INF/db/h2.trace.db

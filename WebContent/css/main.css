@@ -1,0 +1,515 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "Libre Baskerville";
+	src: local("Libre Baskerville"),
+		url("../Libre+Baskerville/libre-baskerville-v4-latin-regular.woff2") format("woff2"),
+		url("../Libre+Baskerville/libre-baskerville-v4-latin-regular.woff") format("woff");
+	font-weight: 400;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background: /*CSS_REPLACE01*/#1DAC6C/*CSS_REPLACE01*/
+		/*CSS_REPLACE02*/url(../img/common/bg_green.jpg)/*CSS_REPLACE02*/
+		no-repeat center top fixed;
+	font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN",
+		Meiryo, sans-serif;
+}
+
+#gbBox {
+	height: 100%;
+	min-height: 100%;
+}
+
+body>#gbBox {
+	height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+	.row .col {
+		padding: 0;
+	}
+}
+
+#userActionDiv {
+	width: 250px;
+	margin: 0;
+}
+
+#userActionDiv input.select-dropdown {
+	margin: 0;
+	height: 1.5rem;
+	line-height: 1.5rem;
+}
+
+.breadcrumbs {
+	color: #777;
+	font-family: sans-serif;
+	font-weight:bold;
+}
+
+.navBox {
+	color: #9ca;
+	background-color: #fff;
+	padding-bottom: 6px;
+	/* text-align: center; */
+	height: 67px;
+}
+
+.navIconDiv {
+	width: 18.5%;
+	height: 67px;
+	display: inline-block;
+	border-bottom: 3px solid transparent;
+}
+
+.navIconActivate {
+	border-bottom: 3px solid #d44;
+}
+
+@media only screen and (max-width: 992px) {
+  .center-on-med-and-down {
+    text-align: center;
+  }
+}
+
+#middleWrapper {
+	width: 100%;
+	background: url(../img/common/bg_horizon.png) center bottom repeat-x;
+}
+
+#middleBlock {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 1280px;
+	min-height: 600px;
+}
+
+#mainBlock {
+	padding: 0 0 8px 0;
+}
+
+.newMessageBox {
+	background-color: rgba(255,255,255,0.6);
+}
+
+#leftBlock {
+	min-width: 270px;
+}
+
+.tlKindPanel {
+	-webkit-transition: -webkit-box-shadow .25s;
+	transition: -webkit-box-shadow .25s;
+	transition: box-shadow .25s;
+	transition: box-shadow .25s, -webkit-box-shadow .25s;
+	padding: 2px 8px 2px 4px;
+	margin: 4px 14px 4px 0;
+	border-radius: 2px;
+	background-color: rgba(150,240,180,0.7);
+	display: block;
+}
+
+#rightBlock {
+	width: 270px;
+}
+
+.modal-content h4 {
+	font-size: 137%;
+}
+
+.modal-content h5 {
+	font-size: 115%;
+}
+
+.modal-content ul.columnize {
+	padding: 0;
+	margin-bottom: 1.5rem;
+	font-size: 0px;
+}
+
+.modal-content ul.columnize li {
+	width: 250px;
+	font-size: 1rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.page-footer {
+	margin-top: 0;
+}
+
+.widthID {
+	width: 120px;
+}
+
+.widthName {
+	width: 120px;
+}
+
+.widthNameRuby {
+	width: 140px;
+}
+
+.widthBelong {
+	width: 140px;
+}
+
+.width200px {
+	width: 200px;
+}
+
+.width300px {
+	width: 300px;
+}
+
+.widthKind {
+	width: 80px;
+}
+
+.widthDate {
+	width: 140px;
+}
+
+.widthPeriod {
+	width: 280px;
+}
+
+.widthNameAndBelong {
+	width: 140px;
+}
+
+.widthDescShort {
+	width: 140px;
+}
+
+.collection .collection-item.avatar .title {
+	color: #777;
+}
+
+.collection .collection-item.avatar .body {
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+.collection .collection-item.avatar .download {
+	line-height: 2rem;
+}
+
+.collection .collection-item.avatar .timestamp {
+	color: #999;
+	font-size: 75%;
+	text-align: right;
+}
+
+table.collection {
+	border-collapse: separate;
+}
+table.collection tbody td {
+	border-bottom: 1px solid #e0e0e0;
+	border-radius: 0;
+}
+table.collection td {
+	border-bottom: 1px solid #e0e0e0;
+	border-radius: 0;
+}
+table.collection tbody tr:last-child td {
+	border-bottom: none;
+}
+table.collection tr:last-child td {
+	border-bottom: none;
+}
+table.collection tbody tr:last-child td:first-child {
+	border-radius: 0 0 0 2px;
+}
+table.collection tr:last-child td:first-child {
+	border-radius: 0 0 0 2px;
+}
+table.collection tbody tr:last-child td:last-child {
+	border-radius: 0 0 2px 0;
+}
+table.collection tr:last-child td:last-child {
+	border-radius: 0 0 2px 0;
+}
+
+table.striped-responsive > thead > tr > th {
+	text-align: center;
+}
+
+table.striped-responsive > tbody > tr > td {
+	border-radius: 0;
+}
+
+table.striped-responsive > tbody > tr > td > a.btn-floating {
+	margin: 2px 0px;
+}
+
+@media only screen and (min-width: 601px) {
+	.widthID {
+		width: 120px;
+	}
+
+	.widthName {
+		width: 120px;
+	}
+
+	.widthNameRuby {
+		width: 140px;
+	}
+
+	.widthBelong {
+		width: 140px;
+	}
+
+	.widthKind {
+		width: 80px;
+	}
+
+	.widthDate {
+		width: 140px;
+	}
+
+	.widthPeriod {
+		width: 280px;
+	}
+
+	.widthNameAndBelong {
+		width: 200px;
+	}
+
+	.widthDescShort {
+		width: 200px;
+	}
+}
+
+@media only screen and (min-width: 993px) {
+	.widthID {
+		width: 120px;
+	}
+
+	.widthName {
+		width: 120px;
+	}
+
+	.widthNameRuby {
+		width: 140px;
+	}
+
+	.widthBelong {
+		width: 140px;
+	}
+
+	.widthKind {
+		width: 80px;
+	}
+
+	.widthDate {
+		width: 140px;
+	}
+
+	.widthPeriod {
+		width: 280px;
+	}
+
+	.widthNameAndBelong {
+		width: 120px;
+	}
+
+	.widthDescShort {
+		width: 100px;
+	}
+}
+
+@media only screen and (min-width: 993px) {
+	table.striped-responsive > tbody > tr:nth-child(odd) {
+		background-color: #f2f2f2;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	table.striped-responsive {
+		border: none;
+	}
+
+	table.striped-responsive > thead {
+		display: none;
+	}
+
+	table.striped-responsive > tbody > tr {
+		border-top: 1px solid #999;
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	table.striped-responsive > tbody > tr > td:nth-child(odd) {
+		background-color: #f2f2f2;
+	}
+
+	table.striped-responsive > tbody > tr > td {
+		border-left: 1px solid #999;
+		border-right: 1px solid #999;
+		border-bottom: 1px solid #999;
+		display: block;
+		padding: 10px;
+		text-align: right;
+	}
+
+	table.striped-responsive > tbody > tr > td::before {
+		content: attr(data-label);
+		float: left;
+		font-weight: bold;
+	}
+}
+
+.btnHeightMiddle {
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 40px;
+}
+
+fieldset {
+	margin-top: 5px;
+	margin-bottom: 30px;
+	background-color: #eafff0;
+	border-radius: 5px;
+}
+
+legend {
+	color: #348a71;
+	padding-left: 4px;
+	padding-right: 4px;
+	font-size: 150%;
+}
+
+.inputDesc {
+	margin-top: -16px;
+	margin-bottom: 40px;
+}
+
+.radioGroup {
+	margin-bottom: 12px;
+}
+
+.radioGroup > label {
+	display: inline-block;
+	padding-right: 8px;
+	padding-bottom: 4px;
+}
+
+.checkboxGroup {
+	margin-bottom: 12px;
+}
+
+.checkboxGroup > label {
+	display: inline-block;
+	padding-right: 10px;
+	padding-bottom: 4px;
+}
+
+table.bordered-responsive {
+	margin-top: 5px;
+	margin-bottom: 30px;
+}
+
+table.bordered-responsive > thead > tr,
+table.bordered-responsive > tbody > tr {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+table.bordered-responsive caption {
+	color: #348a71;
+	padding-left: 12px;
+	font-size: 150%;
+	text-align: left;
+}
+
+.picker__select--month.browser-default {
+	width: 20%;
+}
+
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+	padding-left: 28px;
+	padding-right: 8px;
+}
+
+[type="checkbox"] + label {
+	padding-left: 30px;
+	padding-right: 8px;
+}
+
+.btn, .btn-large,
+.btn-flat {
+	text-transform: none;
+}
+
+.tlBadges {
+	margin: 2px 0 0;
+}
+
+.tlBadgeLight {
+	min-width: 3rem;
+	padding: 0 6px;
+	margin: 4px 8px 4px 0;
+	text-align: center;
+	font-size: 1rem;
+	color: #555;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.tlBadgeDark {
+	min-width: 3rem;
+	padding: 0 6px;
+	margin: 4px 8px 4px 0;
+	text-align: center;
+	font-size: 1rem;
+	color: #ddd;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.docViewGroup {
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 30px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+.docViewGroup > h4 {
+	color: #348a71;
+	padding-left: 12px;
+	font-size: 150%;
+	text-align: left;
+}
+
+.docViewGroup > h5 {
+	padding: 10px 5px 5px;
+	font-size: 100%;
+	text-align: left;
+	font-weight: bold;
+}
+
+.wickedpicker__title {
+	color: #fff;
+	background-color: #26a69a;
+	border-bottom: none;
+}
+
+.roundInfo {
+	background-color: rgba(234,247,245,0.7);
+	border-radius: 5px;
+	padding: 15px;
+	margin-bottom: 10px;
+}
+
+.listerCode {
+	color: #b98;
+}

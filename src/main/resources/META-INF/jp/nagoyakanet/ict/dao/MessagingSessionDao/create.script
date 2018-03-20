@@ -1,0 +1,10 @@
+CREATE TABLE messaging_session(
+ seq BIGINT AUTO_INCREMENT PRIMARY KEY,
+ sign_in_id VARCHAR(100),
+ session_id VARCHAR(100) NOT NULL,
+ created_at TIMESTAMP NULL,
+ updated_at TIMESTAMP NULL,
+ expired_at TIMESTAMP NULL
+);
+
+CREATE INDEX idx_messaging_session_session_id ON messaging_session(session_id);

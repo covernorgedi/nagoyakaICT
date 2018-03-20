@@ -1,0 +1,53 @@
+<tr>
+ <td data-label="交付年月日">
+  <div class="right">
+   <span class="truncate widthDate">
+    #cmn/date2YmdJa(__CREATIVE_WORK__DATE_PUBLISHED__DATE__)
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="担当医師">
+  <div class="right">
+   <span class="truncate widthNameAndBelong">
+    #cmn/nameAndBelong[""CREATE_ACTION__AGENT__PERSON_LIST__1__NAME__STRING"",""CREATE_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING""]
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="担当薬剤師">
+  <div class="right">
+   <span class="truncate widthNameAndBelong">
+    #cmn/nameAndBelong[""REVIEW_ACTION__AGENT__PERSON_LIST__1__NAME__STRING"",""REVIEW_ACTION__AGENT__ORGANIZATION_LIST__1__NAME__STRING""]
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="更新日">
+  <div class="right">
+   <span class="truncate widthDate">
+    #cmn/date2YmdJa(__CREATIVE_WORK__DATE_MODIFIED__DATE_TIME__)
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="更新者">
+  <div class="right">
+   <span class="truncate widthNameAndBelong">
+    #cmn/nameAndBelong[""COME_BY_USER_NM"",""COME_BY_OFFICE_NM""]
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="処方">
+  <div class="right">
+   <span class="truncate widthDescShort">
+    __FORMULA_LIST__1__ENTRY__
+   </span>
+  </div>
+  <div class="clearfix"></div>
+ </td>
+ <td data-label="操作">
+  #docSearchOperations(__SID__,__ACT__,__PATH__,__SEQ__)
+ </td>
+</tr>

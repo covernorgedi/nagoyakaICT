@@ -1,0 +1,77 @@
+<div id="tabEditBody">
+ <div class="row">
+  <div class="col s12 m12 l6">
+   #cmn/docPersonShortView{"title":"利用者情報","person":__CONSUME_ACTION__AGENT__PERSON_LIST__1__MINION__}
+   #cmn/inputHiddenNormal{"attrs":{"id":"consumeAction.agent.personList.1.minion"}}
+
+   #cmn/inputHiddenNormal{"attrs":{"id":"createAction.minion"}}
+   #cmn/inputHiddenNormal{"attrs":{"id":"creativeWork.minion"}}
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <fieldset>
+    <legend>診断</legend>
+    #cmn/inputTextNormal{"label":"診断名","attrs":{"id":"diagnosisName"}}
+    #cmn/textAreaNormal{"label":"診断内容","attrs":{"id":"diagnosisDesc"}}
+    #cmn/textAreaNormal{"label":"既往歴","attrs":{"id":"medicalHistory"}}
+   </fieldset>
+
+  </div>
+ </div>
+
+ <div class="row">
+  <div class="col s12 m12 l6">
+
+   <fieldset>
+    <legend>重要事項</legend>
+    #cmn/textAreaNormal{"label":"病態変化時の対処","attrs":{"id":"emergentChanges"}}
+    #cmn/textAreaNormal{"label":"指示したこと","attrs":{"id":"emergencyDirections"}}
+    #cmn/textAreaNormal{"label":"留意すべきこと","attrs":{"id":"emergencyNotes"}}
+    <div class="radioGroup">
+     <label>不整脈の有無</label><br />
+     #cmn/inputRadioNormal{"label":"不明","attrs":{"id":"hasArrhythmia.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"hasArrhythmia.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"hasArrhythmia.N"}}
+    </div>
+   </fieldset>
+
+   <fieldset>
+    <legend>感染症</legend>
+    <div class="radioGroup">
+     <label>感染症の有無</label><br />
+     #cmn/inputRadioNormal{"label":"不明","attrs":{"id":"hasInfectiousDisease.U"}}
+     #cmn/inputRadioNormal{"label":"有","attrs":{"id":"hasInfectiousDisease.H"}}
+     #cmn/inputRadioNormal{"label":"無","attrs":{"id":"hasInfectiousDisease.N"}}
+    </div>
+    #cmn/textAreaNormal{"label":"種別","attrs":{"id":"infectiousDiseaseKindDesc"}}
+    #cmn/textAreaNormal{"label":"伝達事項など","attrs":{"id":"infectiousDiseaseIssues"}}
+   </fieldset>
+
+   <fieldset>
+    <legend>アレルギー</legend>
+    <div class="checkboxGroup">
+     <label>アレルギーの有無</label><br />
+     #cmn/inputCheckboxNormal{"label":"食物","attrs":{"id":"hasAllergie.E"}}
+     #cmn/inputCheckboxNormal{"label":"薬剤","attrs":{"id":"hasAllergie.M"}}
+     #cmn/inputCheckboxNormal{"label":"その他","attrs":{"id":"hasAllergie.O"}}
+    </div>
+    #cmn/textAreaNormal{"label":"種別","attrs":{"id":"allergieKindDesc"}}
+    #cmn/textAreaNormal{"label":"伝達事項など","attrs":{"id":"allergieIssues"}}
+   </fieldset>
+
+  </div>
+
+  <div class="col s12 m12 l6">
+
+   <fieldset>
+    <legend>薬</legend>
+    <a class="btn waves-effect waves-light green darken-1" href="#!" onclick="$.thingLister.addEmptyRow(this);">薬を追加</a>
+    #reg/medical/diagnosisMedicineAllergy/editListerNecessaryMedicine{"necessaryMedicineList.demion":__NECESSARY_MEDICINE_LIST__MINION__}
+   </fieldset>
+
+  </div>
+ </div>
+
+</div>

@@ -1,0 +1,5 @@
+eclipse.preferences.version=1
+org.eclipse.jdt.apt.aptEnabled=true
+org.eclipse.jdt.apt.genSrcDir=.apt_generated
+org.eclipse.jdt.apt.processorOptions/doma.domain.converters=org.kyojo.schemaOrg.m3n3.doma.DomainConvertersProvider,jp.nagoyakanet.ict.scm.DomainConvertersProvider
+org.eclipse.jdt.apt.reconcileEnabled=true

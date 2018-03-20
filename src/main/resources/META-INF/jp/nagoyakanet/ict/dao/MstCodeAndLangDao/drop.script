@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS mst_code_and_lang;
+
+DROP INDEX IF EXISTS idx_mst_code_and_lang_agcs;
+DROP INDEX IF EXISTS idx_mst_code_and_lang_gcs;
+DROP INDEX IF EXISTS idx_mst_code_and_lang_cs;
+DROP INDEX IF EXISTS idx_mst_code_and_lang_i;

@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+.carousel {
+	height: auto;
+	min-height: 600px;
+}
+
+.carousel .carousel-item {
+	height: auto;
+}
+
+h2.docPageHeader {
+	width: 90%;
+	margin: 5px auto;
+	padding: 2px;
+	font-size: 175%;
+	text-align: center;
+	background: /*CSS_REPLACE03*/#adffda/*CSS_REPLACE03*/;
+	border: none;
+	border-radius: 1rem;
+	box-shadow: 6px 4px /*CSS_REPLACE04*/#6ccf91/*CSS_REPLACE04*/;
+}
+@media only screen and (min-width: 601px) {
+	h2.docPageHeader {
+		width: 60%;
+	}
+}
+@media only screen and (min-width: 993px) {
+	h2.docPageHeader {
+		width: 35%;
+	}
+}
+
+.tabBox {
+	padding-top: 8px;
+	padding-bottom: 12px;
+}
+
+#faceIconImg {
+	max-width: 150px;
+	max-height: 200px;
+	border: 1px solid #eee;
+	border-radius: 6px;
+}
+
+#faceIconImg_ {
+	max-width: 150px;
+	max-height: 200px;
+	border: 1px solid #eee;
+	border-radius: 6px;
+}
+
